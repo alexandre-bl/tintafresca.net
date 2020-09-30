@@ -6,9 +6,9 @@ $add_table = $wpdb->prefix . "adds";
 $charset_collate = $wpdb->get_charset_collate();
 $sql = 
 "CREATE TABLE IF NOT EXISTS $add_table (
-        TEXT(255) id,
-        URL img,
-        URL link
+        id TEXT,
+        img URL,
+        link URL
         ) $charset_collate;";
 require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 dbDelta( $sql );
