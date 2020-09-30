@@ -13,7 +13,7 @@ $sql =
 require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 dbDelta( $sql );
 
-//$request = $wpdb->get_results ( "SELECT * FROM $add_table" );
+$request = $wpdb->get_results ( "SELECT * FROM $add_table" );
 $add_js = "<script>
 
 adds(
