@@ -27,7 +27,7 @@ require dirname(__FILE__)."/modules/adds/main.php";
     <head>
 
         <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/reset.css">
-        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css">
+        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
 
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_site_icon_url() ?>">
 
