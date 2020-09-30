@@ -6,7 +6,7 @@ $add_table = $wpdb->prefix . "adds";
 $charset_collate = $wpdb->get_charset_collate();
 $sql = 
 "CREATE TABLE IF NOT EXISTS $add_table (
-        TEXT id,
+        TEXT(255) id,
         URL img,
         URL link
         ) $charset_collate;";
