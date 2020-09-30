@@ -14,11 +14,10 @@ require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 dbDelta( $sql );
 
 $request = $wpdb->get_results ( "SELECT * FROM $add_table" );
-print_r($request);
 $add_js = "<script>
 
 adds(
-    '',
+    'https://www.vultr.com/media/banners/banner_468x60.png',
     '',
     ''
 );
