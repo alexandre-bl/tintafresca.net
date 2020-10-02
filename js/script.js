@@ -64,7 +64,7 @@ function adds(top="", left="", right="") {
 
   var right_add = document.getElementById("right_add");
   right_add.innerHTML = "<img class='add' src=" + right + ">";
-/*  
+ 
   var adds = document.getElementsByClassName("add");
 
   for (i = 0; i < adds.length; i++) {
@@ -93,7 +93,7 @@ function adds(top="", left="", right="") {
 
     }
 
-  }*/
+  }
 
 }
 

@@ -17,7 +17,7 @@ $request = $wpdb->get_results ( "SELECT * FROM $add_table" );
 $add_js = "<script>
 
 adds(
-    'https://www.vultr.com/media/banners/banner_468x60.png',
+    'http://www.tintafresca.net/_Banners/806_Banner_alcobacaficaemcasa_tinta.gif',
     '',
     ''
 );
