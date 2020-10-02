@@ -11,7 +11,7 @@
 
     <body>
 
-        <?php get_header(); ?>
+        <?php require_once "php/header.php"; ?>
 
     </body>
 
