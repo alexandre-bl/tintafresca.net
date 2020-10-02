@@ -7,7 +7,7 @@ $logo = wp_get_attachment_image_src( $logo_id , 'full' );
 
 <div id="header">
 
-    <img id="logo" href="<?php echo $logo; ?>">
+    <img id="logo" href="<?php echo $logo[0]; ?>">
     <div class="add"></div>
 
 </div>
