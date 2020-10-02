@@ -55,7 +55,7 @@ function update(img_mx_p) {
 }
 
 function adds(top="", left="", right="") {
-
+/*
   var top_add = document.getElementById("top_add");
   top_add.innerHTML = "<img class='add' src=" + top + ">";
 
@@ -93,7 +93,7 @@ function adds(top="", left="", right="") {
 
     }
 
-  }
+  }*/
 
 }
 
