@@ -5,9 +5,14 @@
 
         <link ref="stylesheet" href="<?php echo get_template_directory_uri()."/style.css" ?>">
 
-        <script>
-        </script>
+        <script></script>
 
     </head>
+
+    <body>
+
+        <?php get_header(); ?>
+
+    </body>
 
 </html>
