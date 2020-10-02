@@ -42,7 +42,7 @@ body, html {
 
 }
 
-#header #logo {
+#logo {
 
     height: var(--header_height);
     width: var(--header_height);
