@@ -79,13 +79,7 @@ function adds(top="", left="", right="") {
     var o_parent_dims = [
       window.getComputedStyle(parent, null).getPropertyValue("width"),
       window.getComputedStyle(parent, null).getPropertyValue("height"),
-    ]; 
-
-    var debug = i + ":\n";
-    debug += "  Self: " + o_add_dims + "\n";
-    debug += "  Parent: " + o_parent_dims + "\n";
-
-    console.log( debug );
+    ];
 
     if(
         o_add_dims[0] * ( o_parent_dims[0] / o_add_dims[1] ) < o_parent_dims[1]
