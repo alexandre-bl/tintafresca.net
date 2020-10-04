@@ -6,7 +6,7 @@ function create_database($name, $columns) {
     $name = $wpdb->prefix . $name;
     $charset_collate = $wpdb->get_charset_collate();
 
-    $columns_str = ""
+    $columns_str = "";
     foreach( $columns as $column ) { $columns_str .= "$column,"; }
 
     $sql = "CREATE TABLE IF NOT EXISTS $name ( $columns ) $charset_collate; ";
