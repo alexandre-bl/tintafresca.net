@@ -1,6 +1,6 @@
 <?php
 
-require_once get_template_directory()."/php/functions.php";
+//require_once get_template_directory()."/php/functions.php";
 
 $logo_id = get_theme_mod( 'custom_logo' );
 $logo = wp_get_attachment_image_src( $logo_id , 'full' )[0];
