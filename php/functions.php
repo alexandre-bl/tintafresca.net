@@ -1,4 +1,4 @@
-<?
+<?php
 
 function create_database($name, $columns) {
 
