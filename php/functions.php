@@ -15,3 +15,5 @@ function create_database($name, $columns) {
     dbDelta($sql);
 
 }
+
+?>
