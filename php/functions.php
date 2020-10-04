@@ -9,7 +9,7 @@ function create_database($name, $columns) {
     $columns_str = "";
     foreach( $columns as $column ) { $columns_str .= "$column,"; }
 
-    $sql = "CREATE TABLE IF NOT EXISTS $name ( $columns ) $charset_collate; ";
+    $sql = "CREATE TABLE IF NOT EXISTS $name ( $columns_str ) $charset_collate; ";
 
     require_once(ABSPATH . "wp-admin/includes/upgrade.php");
     dbDelta($sql);
