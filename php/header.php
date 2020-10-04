@@ -1,9 +1,13 @@
 <?php
 
+import_once "./functions.php"
+
 $logo_id = get_theme_mod( 'custom_logo' );
 $logo = wp_get_attachment_image_src( $logo_id , 'full' )[0];
 
 $add = "";
+
+create_database("adds", [ "img TEXT", "url TEXT" ]);
 
 ?>
 
