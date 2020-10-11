@@ -3,7 +3,7 @@
 $pages = get_pages();
 $pages_html = "";
 
-for( $page as $pages ) {
+for( $pages as $page ) {
 
     $page_link = get_page_link( $page->ID );
     $page_title = $page->post_title;
