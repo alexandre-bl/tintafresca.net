@@ -104,6 +104,10 @@ body, html {
 
 #main_posts {
 
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 50%;
 
@@ -118,7 +122,9 @@ body, html {
 
 #nd_post {
 
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 
     width: calc( 50% - var(--std_margin)/2 );
     height: 100%;
