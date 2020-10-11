@@ -2,7 +2,7 @@
 
 require_once get_template_directory()."/php/helpers.php";
 
-set_row("test", "adds", "img", 1);
+set_table("test", "adds", "img", 1);
 print_r(get_table("adds"));
 
 $logo_id = get_theme_mod( 'custom_logo' );
