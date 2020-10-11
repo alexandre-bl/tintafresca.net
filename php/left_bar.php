@@ -17,6 +17,7 @@ foreach( $pages as $page ) {
 <div id="left_bar">
 
     <ul>
+        <li><a href="<?php echo ABSPATH; ?>">Página Inicial</a></li>
         <?php echo $pages_html; ?>
     </ul>
 
