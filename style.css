@@ -150,6 +150,7 @@ body, html {
     padding: var(--std_padding);
     font-size: 1.5em;
     overflow: hidden;
+    display: inline-block;
 
 }
 
@@ -163,6 +164,6 @@ body, html {
 
     float: left;
     padding: var(--std_padding);
-    max-width: 50%;
+    max-height: 50%;
 
 }
