@@ -148,3 +148,9 @@ body, html {
     background-color: var(--background_2);
 
 }
+
+.post img {
+
+    float: left;
+
+}
