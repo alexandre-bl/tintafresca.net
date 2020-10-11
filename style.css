@@ -15,6 +15,7 @@
 
     --border_w: 150px;
     --std_margin: 5px;
+    --background_2: #343434;
 
 }
 
@@ -108,9 +109,33 @@ body, html {
 
 }
 
+#st_post {
+
+    width: calc( 50% - var(--std_margin)/2 );
+    height: 100%;
+
+}
+
+#nd_post {
+
+    margin-left: auto;
+    margin-right: 0;
+
+    width: calc( 50% - var(--std_margin)/2 );
+    height: 100%;
+
+}
+
 #sec_posts {
 
+    margin-top: var(--std_margin);
     width: 100%;
     min-height: 50%;
+
+}
+
+.post {
+
+    background-color: var(--background_2);
 
 }
