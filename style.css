@@ -152,5 +152,6 @@ body, html {
 .post img {
 
     float: left;
+    padding: 5mm;
 
 }
