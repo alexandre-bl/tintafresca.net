@@ -85,7 +85,7 @@ body, html {
 
     list-style-type: none;
     width: 100%;
-    margin: auto;
+    padding: var(--std_margin);
     text-align: center;
 
 }
