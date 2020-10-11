@@ -1,13 +1,15 @@
 <?php
 
-require_once get_template_directory()."/php/functions.php";
+require_once get_template_directory()."/php/helpers.php";
+
+print_r(get_table())
 
 $logo_id = get_theme_mod( 'custom_logo' );
 $logo = wp_get_attachment_image_src( $logo_id , 'full' )[0];
 
 $add = "";
 
-create_database("adds", "img TEXT, url TEXT");
+create_table("adds", "img TEXT, url TEXT");
 
 ?>
 
