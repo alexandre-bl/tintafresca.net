@@ -32,7 +32,7 @@ function set_table($value, $name, $column, $row) {
     $row = $wpdb->get_results("SELECT * from $name WHERE ID=$row");
     $row[$column] = $value;
 
-    $wpdb->update( $name, $row, array( 'ID' => $row ));
+    $wpdb->update( $name, $row, "ID=$row");
 
 }
 
