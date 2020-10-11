@@ -166,6 +166,6 @@ body, html {
     padding: var(--std_padding);
     width: 100%;
     height: auto;
-    max-width: 50%;
+    max-width: 75%;
 
 }
