@@ -9,11 +9,11 @@ $table_name = $wpdb->prefix . $table_name;
 $charset_collate = $wpdb->get_charset_collate();
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 
-dbDelta(" CREATE TABLE IF NOT EXISTS $table_name ( name TEXT, img TEXT, url TEXT ) $charset_collate; ");
+dbDelta(" CREATE TABLE IF NOT EXISTS $table_name ( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, img TEXT, url TEXT ) $charset_collate; ");
 
 $add = array( 
-    "img" => $wpdb->get_results(" SELECT `img` FROM $table_name WHERE `name` = 'top'; "),
-    "url" => $wpdb->get_results(" SELECT `url` FROM $table_name WHERE `name` = 'top'; ")
+    "img" => $wpdb->get_results(" SELECT `img` FROM $table_name WHERE `id` = 0; "),
+    "url" => $wpdb->get_results(" SELECT `url` FROM $table_name WHERE `id` = 0; ")
 );
 
 ?>
