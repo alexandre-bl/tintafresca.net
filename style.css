@@ -135,6 +135,17 @@ body, html {
 
 }
 
+#trd_post {
+
+    position: absolute;
+    top: calc(50% + var(--std_margin));
+    right: 0;
+
+    width: calc( 50% - var(--std_margin)/2 );
+    height: 100%;
+
+}
+
 #sec_posts {
 
     margin-top: var(--std_margin);
