@@ -97,19 +97,8 @@ body, html {
     top: calc( var(--border_w) + var(--std_margin) );
     left: calc( var(--border_w) + var(--std_margin) );
 
-    width: calc( 100% - var(--border_w)*2 + var(--std_margin)*2 );
-    min-height: 100%;
-
-}
-
-#main_posts {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 50%;
+    width: calc( 100% - var(--border_w)*2 - var(--std_margin)*2 );
+    height: calc( 100% - var(--border_w) - var(--std_margin)*2 );
 
 }
 
@@ -120,7 +109,7 @@ body, html {
     left: 0;
 
     width: calc( 50% - var(--std_margin)/2 );
-    height: 100%;
+    height: 50%;
 
 }
 
@@ -131,7 +120,7 @@ body, html {
     right: 0;
 
     width: calc( 50% - var(--std_margin)/2 );
-    height: 50%;
+    height: 25%;
 
 }
 
@@ -142,7 +131,7 @@ body, html {
     right: 0;
 
     width: calc( 50% - var(--std_margin)/2 );
-    height: 50%;
+    height: 25%;
 
 }
 
