@@ -2,7 +2,7 @@
 
 require_once get_template_directory()."/php/helpers.php";
 
-print_r(get_table())
+print_r(get_table());
 
 $logo_id = get_theme_mod( 'custom_logo' );
 $logo = wp_get_attachment_image_src( $logo_id , 'full' )[0];
