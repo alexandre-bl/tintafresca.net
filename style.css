@@ -84,8 +84,8 @@ body, html {
 #left_bar li {
 
     list-style-type: none;
-
+    width: 100%;
     margin: auto;
-    padding: var(--std_margin);
+    text-align: center;
 
 }
