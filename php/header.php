@@ -16,7 +16,7 @@ create_table("adds", "img TEXT, url TEXT");
 
 <div id="header">
 
-    <img id="logo" src="<?php echo $logo; ?>">
+    <!--<img id="logo" src="<?php //echo $logo; ?>">-->
     <div class="add"><img src="<?php echo $add; ?>"></div>
 
 </div>
