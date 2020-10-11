@@ -18,7 +18,7 @@ function get_table($name, $column=null, $row=null) {
     global $wpdb;
     $name = $wpdb->prefix . $name;
 
-    $o = $wpdb->get_results( "SELECT img FROM $name where ID=1" );
+    $o = $wpdb->get_results( "SELECT img FROM $name" );
 
     return $o;
 
