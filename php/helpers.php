@@ -29,10 +29,10 @@ function set_table($value, $name, $column, $row) {
     global $wpdb;
     $name = $wpdb->prefix . $name;
 
-    $row = $wpdb->get_results("SELECT * from $name WHERE ID=$row");
-    $row[$column] = $value;
+    $row_data = $wpdb->get_results("SELECT * from $name WHERE ID=$row");
+    $row_data[$column] = $value;
 
-    $wpdb->update( $name, $row, "ID=$row");
+    $wpdb->update( $name, $row_data, "ID=$row");
 
 }
 
