@@ -163,5 +163,6 @@ body, html {
 
     float: left;
     padding: var(--std_padding);
+    max-width: 50%;
 
 }
