@@ -13,7 +13,7 @@ function create_table($name, $columns) {
 
 }
 
-function get_table($name, $row=null, $line=null) {
+function get_table($name, $column=null, $row=null) {
 
     global $wpdb;
     $name = $wpdb->prefix . $name;
@@ -24,7 +24,15 @@ function get_table($name, $row=null, $line=null) {
 
 }
 
-function set_table($value, $name, $row=null, $line=null) {
+function set_table($value, $name, $column, $row) {
+
+    global $wpdb;
+    $name = $wpdb->prefix . $name;
+
+    $row = $wpdb->get_row($y=$row);
+    $row[$column] = $value
+
+    $wpdb->update( $name, $row, array( 'ID' => $row ));
 
 }
 
