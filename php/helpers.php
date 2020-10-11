@@ -30,7 +30,7 @@ function set_table($value, $name, $column, $row) {
     $name = $wpdb->prefix . $name;
 
     $row = $wpdb->get_row($y=$row);
-    $row[$column] = $value
+    $row[$column] = $value;
 
     $wpdb->update( $name, $row, array( 'ID' => $row ));
 
