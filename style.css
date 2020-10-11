@@ -115,6 +115,10 @@ body, html {
 
 #st_post {
 
+    position: absolute;
+    top: 0;
+    right: 0;
+
     width: calc( 50% - var(--std_margin)/2 );
     height: 100%;
 
