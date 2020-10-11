@@ -153,6 +153,12 @@ body, html {
 
 }
 
+.post  h1 {
+
+    font-size: 1.75em;
+
+}
+
 .post img {
 
     float: left;
