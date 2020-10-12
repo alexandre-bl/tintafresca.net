@@ -148,7 +148,7 @@ body, html {
 
     background-color: var(--background_2);
     padding: var(--std_padding);
-    font-size: 1.125em;
+    font-size: 1em;
     overflow: hidden;
     display: inline-block;
 
@@ -156,7 +156,7 @@ body, html {
 
 .post  h1 {
 
-    font-size: 1.3125em;
+    font-size: 1.5em;
 
 }
 
