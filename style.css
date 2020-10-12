@@ -164,7 +164,7 @@ body, html {
 
     float: left;
     padding: var(--std_padding);
-    width: 100%;
+    width: auto;
     height: auto;
     max-width: calc( 75% - var(--std_padding)*2 );
     max-height: calc( 75% - var(--std_padding)*2 );
