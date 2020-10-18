@@ -152,6 +152,8 @@ body, html {
 
     height: 200px;
 
+    width: 100%;
+
 }
 
 #right_posts {
@@ -159,6 +161,8 @@ body, html {
     position: absolute;
     top: 0;
     left: calc( 50% + var(--std_margin)/2 ); 
+
+    width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
 
 }
 
@@ -169,7 +173,6 @@ body, html {
     font-size: 1.3em;
     overflow: hidden;
     display: inline-block;
-    width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
 
 }
 
