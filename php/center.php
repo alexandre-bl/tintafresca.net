@@ -3,7 +3,7 @@
 function get_post_thumbnail($post) {
 
     return "<h1 class='post_title'>$post->post_title</h1>
-            <img class='post_img' src='". wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0]; ."'>
+            <img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>
             <p class='post_desc'>$post->post_content</p>";
 
 }
