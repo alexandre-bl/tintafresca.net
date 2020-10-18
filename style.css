@@ -154,6 +154,10 @@ body, html {
 
     width: 100%;
 
+}
+
+#sec_posts .post img {
+
     max-width: calc( 75% - var(--std_padding)*2 );
 
 }
