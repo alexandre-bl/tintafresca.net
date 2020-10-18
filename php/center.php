@@ -19,9 +19,9 @@ $posts = get_posts( array(
   )
 );
 
-$posts_markup = array(  "st"    => get_post_thumbnail($destaques[1]),
-                        "nd"    => get_post_thumbnail($destaques[2]),
-                        "trd"   => get_post_thumbnail($destaques[3]),
+$posts_markup = array(  "st"    => get_post_thumbnail($destaques[1]) or "",
+                        "nd"    => get_post_thumbnail($destaques[2]) or "",
+                        "trd"   => get_post_thumbnail($destaques[3]) or "",
                         "left"  => "",
                         "right" => ""
                     );
