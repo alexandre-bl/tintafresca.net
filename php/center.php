@@ -2,7 +2,7 @@
 
 function get_post_thumbnail($post) {
 
-    if( !empty($post) ) {
+    if( !empty($post->ID) ) {
 
         return "<h1 class='post_title'>$post->post_title</h1>
                 <img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>
@@ -22,7 +22,7 @@ for( $i = 0; $i < 3; $i += 1 ) {
 
     if( empty( $destaques[$i] ) ) {
 
-        $destaques[$i] = null;
+        $destaques[$i] = array("ID"=>null);
 
     }
 
