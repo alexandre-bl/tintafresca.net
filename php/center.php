@@ -42,8 +42,8 @@ $posts_markup = array(  "st"    => get_post_thumbnail($destaques[0]),
 
 for( $i = 0; $i < count($posts); $i += 1 ) {
 
-    if( $posts[$i]->ID != $destaques[0]->ID or
-        $posts[$i]->ID != $destaques[1]->ID or
+    if( $posts[$i]->ID != $destaques[0]->ID and
+        $posts[$i]->ID != $destaques[1]->ID and
         $posts[$i]->ID != $destaques[2]->ID )   {
 
         $thumbnail = "<div class='post'>". get_post_thumbnail($posts[$i]) ."</div>";
