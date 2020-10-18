@@ -14,7 +14,7 @@ function get_post_thumbnail($post) {
 
 $destaques = $posts = get_posts( array(
     'numberposts' => 3,
-    "category" =>  "Destaques"
+    'category_name'=>  "Destaques"
   )
 );
 
