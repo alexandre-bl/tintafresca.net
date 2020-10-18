@@ -50,11 +50,11 @@ for( $i = 0; $i < count($posts); $i += 1 ) {
 
         if( ($i - 1) % 2 == 0 ) {
 
-            $posts_markup["left"] .= $markup;
+            $posts_markup["left"] .= $thumbnail;
 
         } else {
 
-            $posts_markup["right"] .= $markup;
+            $posts_markup["right"] .= $thumbnail;
 
         }
 
