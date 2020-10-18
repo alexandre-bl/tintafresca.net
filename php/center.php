@@ -22,7 +22,7 @@ for( $i = 0; $i < 3; $i += 1 ) {
 
     if( empty( $destaques[$i] ) ) {
 
-        $destaques[$i] = "";
+        $destaques[$i] = null;
 
     }
 
