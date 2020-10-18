@@ -155,7 +155,7 @@ body, html {
     font-size: 1.3em;
     overflow: hidden;
     display: inline-block;
-    width: 50%;
+    width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
 
 }
 
