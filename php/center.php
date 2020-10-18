@@ -2,9 +2,13 @@
 
 function get_post_thumbnail($post) {
 
-    return "<h1 class='post_title'>$post->post_title</h1>
-            <img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>
-            <p class='post_desc'>$post->post_content</p>";
+    if( !empty($post) ) {
+
+        return "<h1 class='post_title'>$post->post_title</h1>
+                <img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>
+                <p class='post_desc'>$post->post_content</p>";
+
+    }
 
 }
 
@@ -14,14 +18,24 @@ $destaques = $posts = get_posts( array(
   )
 );
 
+for( $i = 0; $i < 3; $i += 1 ) {
+
+    if( empty( $destaques[$i] ) ) {
+
+        $destaques[$i] = "";
+
+    }
+
+}
+
 $posts = get_posts( array(
     'numberposts' => -1
   )
 );
 
-$posts_markup = array(  "st"    => get_post_thumbnail($destaques[1]) or "",
-                        "nd"    => get_post_thumbnail($destaques[2]) or "",
-                        "trd"   => get_post_thumbnail($destaques[3]) or "",
+$posts_markup = array(  "st"    => get_post_thumbnail($destaques[1]),
+                        "nd"    => get_post_thumbnail($destaques[2]),
+                        "trd"   => get_post_thumbnail($destaques[3]),
                         "left"  => "",
                         "right" => ""
                     );
