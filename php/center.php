@@ -40,6 +40,8 @@ $posts_markup = array(  "st"    => get_post_thumbnail($destaques[0]),
                         "right" => ""
                     );
 
+$destaques_n = 0;
+
 for( $i = 0; $i < count($posts); $i += 1 ) {
 
     if( $posts[$i] != $destaques[0] and
@@ -48,7 +50,7 @@ for( $i = 0; $i < count($posts); $i += 1 ) {
 
         $thumbnail = "<div class='post'>". get_post_thumbnail($posts[$i]) ."</div>";
 
-        if( $i % 2 != 0 ) {
+        if( ( $i - $destaques_n ) % 2 != 0 ) {
 
             $posts_markup["left"] .= $thumbnail;
 
@@ -57,6 +59,10 @@ for( $i = 0; $i < count($posts); $i += 1 ) {
             $posts_markup["right"] .= $thumbnail;
 
         }
+
+    } else {
+
+        $destaques_n += 1;
 
     }
 
