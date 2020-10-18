@@ -152,7 +152,7 @@ body, html {
 
     position: absolute;
     top: 0;
-    left: calc( 50% + var(--std_margin)/2 + var(--std_padding)*2 ); 
+    left: calc( 50% + var(--std_margin)/2 + var(--std_padding) ); 
 
 }
 
