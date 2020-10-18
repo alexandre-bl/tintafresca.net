@@ -148,6 +148,12 @@ body, html {
 
 }
 
+#sec_posts .post {
+
+    height: 100px;
+
+}
+
 #right_posts {
 
     position: absolute;
