@@ -48,7 +48,7 @@ for( $i = 0; $i < count($posts); $i += 1 ) {
 
         $thumbnail = "<div class='post'>". get_post_thumbnail($posts[$i]) ."</div>";
 
-        if( ($i - 1) % 2 == 0 ) {
+        if( $i % 2 != 0 ) {
 
             $posts_markup["left"] .= $thumbnail;
 
