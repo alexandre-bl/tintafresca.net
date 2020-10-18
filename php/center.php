@@ -33,9 +33,9 @@ $posts = get_posts( array(
   )
 );
 
-$posts_markup = array(  "st"    => get_post_thumbnail($destaques[1]),
-                        "nd"    => get_post_thumbnail($destaques[2]),
-                        "trd"   => get_post_thumbnail($destaques[3]),
+$posts_markup = array(  "st"    => get_post_thumbnail($destaques[0]),
+                        "nd"    => get_post_thumbnail($destaques[1]),
+                        "trd"   => get_post_thumbnail($destaques[2]),
                         "left"  => "",
                         "right" => ""
                     );
