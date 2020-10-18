@@ -22,7 +22,7 @@ for( $i = 0; $i < 3; $i += 1 ) {
 
     if( empty( $destaques[$i] ) ) {
 
-        $destaques[$i] = array("ID"=>null);
+        $destaques[$i] = null;
 
     }
 
@@ -42,9 +42,9 @@ $posts_markup = array(  "st"    => get_post_thumbnail($destaques[0]),
 
 for( $i = 0; $i < count($posts); $i += 1 ) {
 
-    if( $posts[$i]->ID != $destaques[0]->ID and
-        $posts[$i]->ID != $destaques[1]->ID and
-        $posts[$i]->ID != $destaques[2]->ID )   {
+    if( $posts[$i] != $destaques[0] and
+        $posts[$i] != $destaques[1] and
+        $posts[$i] != $destaques[2] )   {
 
         $thumbnail = "<div class='post'>". get_post_thumbnail($posts[$i]) ."</div>";
 
