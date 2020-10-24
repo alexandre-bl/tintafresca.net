@@ -112,7 +112,7 @@ body, html {
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
     height: calc( 90% - var(--std_padding)*2 );
 
-    max-height: calc( 100% - var(--std_padding)*2 );
+    max-height: calc( 90% - var(--std_padding)*2 );
 
 }
 
@@ -210,6 +210,5 @@ body, html {
     padding: var(--std_padding);
     width: 100%;
     height: 100%;
-    height: auto;
 
 }
