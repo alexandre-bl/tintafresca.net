@@ -189,6 +189,16 @@ body, html {
 
 }
 
+.post.main img {
+
+    height: auto;
+    max-height: none;
+
+    width: 100%;
+    max-width: calc( 100% - var(--std_padding)*2 );
+
+}
+
 .post {
 
     background-color: var(--background_2);
@@ -211,7 +221,6 @@ body, html {
     padding: var(--std_padding);
 
     height: 100%;
-
     max-height: calc( 100% - var(--std_padding)*2 );
 
 }
