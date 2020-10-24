@@ -199,6 +199,6 @@ body, html {
 
     height: 100%;
 
-    max-height: calc( 50% - var(--std_padding)*2 );
+    max-height: calc( 100% - var(--std_padding)*2 );
 
 }
