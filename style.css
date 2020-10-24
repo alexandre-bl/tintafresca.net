@@ -201,6 +201,11 @@ body, html {
     font-size: 1em;
     overflow: hidden;
     display: inline-block;
+
+}
+
+.post_desc {
+
     font-style: normal;
 
 }
