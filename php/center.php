@@ -72,7 +72,7 @@ for( $i = 0; $i < count($posts); $i += 1 ) {
 
 <div id="center">
 
-    <div class="post" id="st_post">
+    <div class="post main" id="st_post">
         <?php echo $posts_markup["st"]; ?>
     </div>
 
