@@ -110,7 +110,7 @@ body, html {
     left: 0;
 
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
-    height: 100%;
+    height: calc( 100% - var(--std_padding)*2 );
 
     max-height: calc( 80% - var(--std_padding)*2 );
 
