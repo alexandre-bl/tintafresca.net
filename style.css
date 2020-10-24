@@ -213,6 +213,7 @@ body, html {
 .post_desc {
 
     font-style: normal !important;
+    white-space: unset;
 
 }
 
