@@ -210,6 +210,13 @@ body, html {
 
 }
 
+.post_desc p {
+
+    margin: 0;
+    line-break: unset;
+
+}
+
 .post_desc {
 
     font-style: normal !important;
