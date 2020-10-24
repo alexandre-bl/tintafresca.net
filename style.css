@@ -112,8 +112,6 @@ body, html {
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
     height: calc( 90% - var(--std_padding)*2 );
 
-    max-height: calc( 90% - var(--std_padding)*2 );
-
 }
 
 #nd_post {
@@ -125,8 +123,6 @@ body, html {
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
     height: calc( 45% - var(--std_padding)*2 );
 
-    max-height: calc( 80% - var(--std_padding)*2 );
-
 }
 
 #trd_post {
@@ -137,8 +133,6 @@ body, html {
 
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
     height: calc( 45% - var(--std_margin) - var(--std_padding)*2 );
-
-    max-height: calc( 80% - var(--std_padding)*2 );
 
 }
 
@@ -159,13 +153,6 @@ body, html {
     height: 200px;
 
     width: 100%;
-
-}
-
-#sec_posts .post img {
-
-    max-height: calc( 50% - var(--std_padding)*2 );
-    max-width: calc( 50% - var(--std_padding)*2 );
 
 }
 
@@ -211,5 +198,8 @@ body, html {
     padding: var(--std_padding);
     width: 100%;
     height: 100%;
+
+    max-height: calc( 50% - var(--std_padding)*2 );
+    max-width: calc( 50% - var(--std_padding)*2 );
 
 }
