@@ -176,6 +176,19 @@ body, html {
 
 }
 
+.post.main {
+
+
+    font-size: 1.5em;
+
+}
+
+.post.main h1 {
+
+    font-size: 2em;
+
+}
+
 .post {
 
     background-color: var(--background_2);
@@ -189,12 +202,6 @@ body, html {
 .post  h1 {
 
     font-size: 1.25em;
-
-}
-
-.post.main h1 {
-
-    font-size: 2em;
 
 }
 
