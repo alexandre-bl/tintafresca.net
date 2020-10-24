@@ -217,6 +217,12 @@ body, html {
 
 }
 
+.post_desc br {
+
+    line-break: unset;
+
+}
+
 .post_desc {
 
     font-style: normal !important;
