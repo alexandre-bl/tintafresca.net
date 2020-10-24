@@ -204,8 +204,9 @@ body, html {
 
 }
 
-.post_desc strong {
+.post_desc {
 
+    font-weight: normal;
     font-style: normal;
 
 }
