@@ -204,9 +204,14 @@ body, html {
 
 }
 
-.post_desc {
+.post_desc strong,b {
 
     font-weight: normal !important;
+
+}
+
+.post_desc {
+
     font-style: normal !important;
 
 }
