@@ -112,7 +112,7 @@ body, html {
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
     height: calc( 90% - var(--std_padding)*2 );
 
-    font-size: 1.5em;
+    font-size: 1.6em;
 
 }
 
@@ -213,12 +213,6 @@ body, html {
 .post_desc p {
 
     margin: 0;
-    line-break: unset;
-
-}
-
-.post_desc br {
-
     line-break: unset;
 
 }
