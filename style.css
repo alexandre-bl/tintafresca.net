@@ -192,6 +192,12 @@ body, html {
 
 }
 
+.post.main h1 {
+
+    font-size: 2em;
+
+}
+
 .post img {
 
     float: left;

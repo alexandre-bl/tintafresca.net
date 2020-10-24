@@ -76,11 +76,11 @@ for( $i = 0; $i < count($posts); $i += 1 ) {
         <?php echo $posts_markup["st"]; ?>
     </div>
 
-    <div class="post" id="nd_post">
+    <div class="post main" id="nd_post">
         <?php echo $posts_markup["nd"]; ?>
     </div>
 
-    <div class="post" id="trd_post">
+    <div class="post main" id="trd_post">
         <?php echo $posts_markup["trd"]; ?>
     </div>
 
