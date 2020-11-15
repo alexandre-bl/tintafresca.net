@@ -240,10 +240,15 @@ body, html {
 
 }
 
+#header .add {
+
+   display: inline-block; 
+
+}
+
 #header .add img {
 
     height: 100%;
     max-width: 100%;
-    display: inline-block;
 
 }
