@@ -12,7 +12,7 @@ require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 dbDelta(" CREATE TABLE IF NOT EXISTS $table_name ( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, img TEXT, link TEXT ) $charset_collate; ");
 
 $add = array( 
-    "img" => $wpdb->get_results(" SELECT `img` FROM $table_name WHERE `id` = 0; "),
+    "img" => $wpdb->get_results(" SELECT `img` FROM $table_name WHERE `id` = 0; ")[0]->img,
     "url" => $wpdb->get_results(" SELECT `link` FROM $table_name WHERE `id` = 0; ")[0]->link
 );
 
