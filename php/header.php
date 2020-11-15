@@ -21,6 +21,6 @@ $add = array(
 <div id="header">
 
     <img id="logo" src="<?php echo $logo; ?>">
-    <div class="add"> <a href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a> </div>
+    <div class="add"> <a href="<?php print_r( $add["url"] ); ?>"> <img src="<?php echo $add["img"]; ?>"> </a> </div>
 
 </div>
