@@ -13,7 +13,7 @@ dbDelta(" CREATE TABLE IF NOT EXISTS $table_name ( id INT(6) UNSIGNED AUTO_INCRE
 
 $add = array( 
     "img" => $wpdb->get_results(" SELECT `img` FROM $table_name WHERE `id` = 0; "),
-    "url" => $wpdb->get_results(" SELECT `link` FROM $table_name WHERE `id` = 0; ")[0]["link"]
+    "url" => $wpdb->get_results(" SELECT `link` FROM $table_name WHERE `id` = 0; ")["link"]
 );
 
 ?>
