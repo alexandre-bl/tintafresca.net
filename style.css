@@ -239,3 +239,10 @@ body, html {
     max-height: calc( 100% - var(--std_padding)*2 );
 
 }
+
+#header .add img {
+
+    height: 100%;
+    max-width: 100%;
+
+}
