@@ -244,6 +244,7 @@ body, html {
 #header .add {
 
     background-color: var(--background_3);
+    border: 1px var(--background_2) solid;
 
 }
 
