@@ -65,7 +65,7 @@ body, html {
 
 }
 
-#header .add {
+#left_bar .add {
 
     width: var(--border_w);
     height: calc( 100% - var(--border_w)*2 - var(--std_margin) );
