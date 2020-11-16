@@ -248,8 +248,13 @@ body, html {
 .post_title {
 
     font-size: 1em;
-    font-style: normal !important;
-    color: black !important;
+
+}
+
+.post_title a {
+    
+    font-style: normal;
+    color: black;
 
 }
 
