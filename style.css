@@ -72,6 +72,13 @@ body, html {
 
 }
 
+#right_bar .add {
+
+    width: var(--border_w);
+    height: calc( 100% - var(--border_w)*2 - var(--std_margin) );
+
+}
+
 #left_bar {
 
     position: absolute;
