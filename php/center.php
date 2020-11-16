@@ -2,13 +2,13 @@
 
 <?php
 
-function get_post_content($post, $page=FALSE) {
+function get_post_content($post, $singular=FALSE) {
 
     if( !empty($post->ID) ) {
 
 		$o = "";
 
-		if( !$page ) {
+		if( !$singular ) {
 
         	$o .= "<img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
 			
@@ -27,7 +27,7 @@ if( is_singular() ) {
 
 	echo ' class="singular">';
 
-	echo get_post_content( get_post(), is_page() );
+	echo get_post_content( get_post(), TRUE );
 
 } else {
 
