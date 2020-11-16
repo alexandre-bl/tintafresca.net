@@ -14,7 +14,7 @@ function get_post_content($post, $page=FALSE) {
 			
 		}
 
-		$o .= "<a href='". get_post_permalink( $post->ID ) ."'><h1 class='post_title'>$post->post_title</h1></a>
+		$o .= "<h1 class='post_title'><a href='". get_post_permalink( $post->ID ) ."'>$post->post_title</a></h1>
                 <div class='post_desc'>$post->post_content</div>";
 
 		return $o;
