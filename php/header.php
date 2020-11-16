@@ -12,8 +12,8 @@ require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 dbDelta(" CREATE TABLE IF NOT EXISTS $table_name ( img TEXT, link TEXT ) $charset_collate; ");
 
 $add = array( 
-    "img" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->img or "",
-    "url" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->link or ""
+    "img" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->img,
+    "url" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->link
 );
 
 ?>
