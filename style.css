@@ -253,7 +253,7 @@ body, html {
 
 .post_title a {
     
-    font-style: normal !important;
+    text-decoration: unset;
     color: black;
 
 }
