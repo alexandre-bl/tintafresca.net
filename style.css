@@ -120,8 +120,11 @@ body, html {
 
 #center.singular .post_img {
 
-    max-width: 100% !important;
-    max-height: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
 
 }
 
