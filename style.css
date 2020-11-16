@@ -115,6 +115,11 @@ body, html {
 #center.singular .post_title {
 
     margin-top: 0;
+
+}
+
+#center.singular h1 {
+    
     font-size: 1.25;
 
 }
