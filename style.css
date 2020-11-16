@@ -238,13 +238,15 @@ body, html {
 
 }
 
-.post  h1 {
+.post_title {
 
     font-size: 1em;
+    font-style: normal;
+    color: black;
 
 }
 
-.post img {
+.post_img {
 
     float: left;
     padding: var(--std_padding);
