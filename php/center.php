@@ -13,7 +13,6 @@ function get_post_content($post) {
     }
 
 }
-}
 
 if( is_singular() ) {
 
