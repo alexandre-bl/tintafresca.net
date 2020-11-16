@@ -41,7 +41,7 @@ if( is_singular() ) {
 	}
 
 	$posts = get_posts( array(
-	    'numberposts' => -1
+	    'numberposts' => -1 
 	  )
 	);
 	
