@@ -17,6 +17,8 @@ function get_post_content($post, $page=TRUE) {
 		$o = "<h1 class='post_title'>$post->post_title</h1>
                 <div class='post_desc'>$post->post_content</div>";
 
+		return $o;
+
     }
 
 }
