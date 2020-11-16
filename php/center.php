@@ -18,7 +18,7 @@ if( is_singular() ) {
 
 	echo ' class="singular">';
 
-	echo get_post_content( get_post() )
+	echo get_post_content( get_post() );
 
 } else {
 
