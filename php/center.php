@@ -8,7 +8,7 @@ function get_post_content($post, $page=FALSE) {
 
 		$o = "";
 
-		if( $page ) {
+		if( !$page ) {
 
         	$o = "<img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
 			
