@@ -23,7 +23,7 @@
 
 body, html {
 
-    width: 96%;
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -302,6 +302,13 @@ body, html {
 }
 
 #left_bar .add img {
+
+    width: 100%;
+    max-height: 100%;
+
+}
+
+#right_bar .add img {
 
     width: 100%;
     max-height: 100%;
