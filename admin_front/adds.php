@@ -17,7 +17,7 @@ function create_page() {
         "anuncios",
         "anuncios",
         "content",
-        24
+        3
     );
 
 }
