@@ -111,7 +111,21 @@ body, html {
 
 }
 
-#center.singular h1 {
+#center.singular {
+
+    background-color: var(--background_2);
+    padding: var(--std_padding);
+
+}
+
+#center.singular .post_img {
+
+    width: 100% !important;
+    height: 100% !important;
+
+}
+
+#center.singular .post_title {
 
     margin-top: 0;
 
