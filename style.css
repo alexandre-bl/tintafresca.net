@@ -104,6 +104,12 @@ body, html {
 
 }
 
+#center.singular {
+
+    background-color: var(--background_2);
+
+}
+
 #st_post {
 
     position: absolute;

@@ -20,7 +20,7 @@ $add = array(
 
 <div id="header">
 
-    <img id="logo" src="<?php echo $logo; ?>">
+    <a href="<?php echo get_site_url(); ?>"><img id="logo" src="<?php echo $logo; ?>"></a>
     <a class="add" href="<?php print_r( $add["url"] ); ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
 
 </div>
