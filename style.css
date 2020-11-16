@@ -107,6 +107,7 @@ body, html {
 #center.singular {
 
     background-color: var(--background_2);
+    padding: var(--std_padding);
 
 }
 
