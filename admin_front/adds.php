@@ -1,23 +1,17 @@
 <?
 
-function content() {
+function wpdocs_register_my_custom_menu_page() {
 
- 
-
-}
-
-add_action( "admin_menu", "create_page");
-
-function create_page() {
-
-    add_menu_page( 
-        "Anúncios",
-        "Anúncios",
-        "manage_options",
-        "anuncios",
-        "anuncios",
-        "content",
-        3
+    add_menu_page(
+        __( 'Custom Menu Title', 'textdomain' ),
+        'custom menu',
+        'manage_options',
+        'myplugin/myplugin-admin.php',
+        '',
+        plugins_url( 'myplugin/images/icon.png' ),
+        6
     );
-
+    
 }
+
+add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
