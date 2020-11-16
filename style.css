@@ -111,6 +111,12 @@ body, html {
 
 }
 
+#center.singular h1 {
+
+    margin-top: 0;
+
+}
+
 #st_post {
 
     position: absolute;
