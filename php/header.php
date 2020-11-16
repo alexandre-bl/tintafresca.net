@@ -12,8 +12,8 @@ require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 dbDelta(" CREATE TABLE IF NOT EXISTS $table_name ( img TEXT, link TEXT ) $charset_collate; ");
 
 $add = array( 
-    "img" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->img,
-    "url" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->link
+    "img" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->img or "",
+    "url" => $wpdb->get_results(" SELECT * FROM $table_name ")[0]->link or ""
 );
 
 ?>
@@ -21,6 +21,6 @@ $add = array(
 <div id="header">
 
     <a href="<?php echo get_site_url(); ?>"><img id="logo" src="<?php echo $logo; ?>"></a>
-    <a class="add" href="<?php print_r( $add["url"] ); ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
+    <a class="add" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
 
 </div>
