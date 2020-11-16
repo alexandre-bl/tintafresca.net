@@ -32,12 +32,6 @@ body, html {
 
 }
 
-h1 {
-
-    font-size: 1.25em;
-
-}
-
 #header {
 
     height: var(--border_w);
@@ -121,7 +115,7 @@ h1 {
 #center.singular .post_title {
 
     margin-top: 0;
-    font-size: inherit;
+    font-size: 1.25;
 
 }
 
