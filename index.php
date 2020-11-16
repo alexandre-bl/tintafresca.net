@@ -12,6 +12,7 @@
 
         <?php require_once "php/header.php"; ?>
         <?php require_once "php/left_bar.php"; ?>
+        <?php require_once "php/right_bar.php"; ?>
         <?php require_once "php/center.php"; ?>
 
     </body>

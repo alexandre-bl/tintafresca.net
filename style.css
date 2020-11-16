@@ -83,6 +83,17 @@ body, html {
 
 }
 
+#right_bar {
+
+    position: absolute;
+    top: calc( var(--border_w) + var(--std_margin) );
+    right: 0;
+
+    width: var(--border_w);
+    height: calc( 100% - var(--border_w) - var(--std_margin)*2 );
+
+}
+
 #left_bar ul {
 
     list-style-type: none;
