@@ -14,17 +14,8 @@ function get_post_content($post, $singular=FALSE) {
 			
 		}
 
-		$o .= "<h1 class='post_title'><a href='". get_post_permalink( $post->ID ) ."'>$post->post_title</a></h1>"
-
-		if( $singular ) {
-
-			$o .= "<div class='post_desc'>". str_replace( "\n", "<br>", $post->post_content )."</div>";
-			
-		} else {
-
-			$o .= "<div class='post_desc'>". str_replace( "\n", "<br>", get_post_meta( get_the_id(), 'description', true) )."</div>";
-
-		}
+		$o .= "<h1 class='post_title'><a href='". get_post_permalink( $post->ID ) ."'>$post->post_title</a></h1>
+                <div class='post_desc'>". str_replace( "\n", "<br>", $post->post_content )."</div>";
 
 		return $o;
 
