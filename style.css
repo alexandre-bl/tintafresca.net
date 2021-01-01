@@ -150,6 +150,12 @@ body, html {
 
 }
 
+#center.singular p {
+
+    line-break: auto;
+
+}
+
 #st_post {
 
     position: absolute;
