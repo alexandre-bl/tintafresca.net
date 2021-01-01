@@ -345,4 +345,5 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .alignright { float: right; }
 .alignleft { float: left; }
 .aligncenter { display: block; margin-left: auto; margin-right: auto; }
-.wp-caption-text { margin: auto; padding-top: 0.2em; padding-bottom: 0.2em; }
+.wp-caption-text { text-align: center; padding-top: 0.2em; padding-bottom: 0.2em; }
+.post .wp-caption-text { display: none; }
