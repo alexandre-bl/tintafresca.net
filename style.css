@@ -152,7 +152,7 @@ body, html {
 
 #center.singular p {
 
-    line-break: auto;
+    line-break: normal;
 
 }
 
