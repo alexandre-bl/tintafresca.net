@@ -5,7 +5,7 @@
 
         <title><?php echo get_bloginfo( 'name' ); ?></title>
         <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
-        <link rel="icon" href="<?php echo get_site_icon_url(); ?>"
+        <link rel="icon" href="<?php echo get_site_icon_url(); ?>">
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css" ?>">
         <meta charset="utf-8">
