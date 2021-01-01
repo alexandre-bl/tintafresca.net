@@ -157,7 +157,7 @@ body, html {
     left: 0;
 
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
-    height: calc( 90% - var(--std_padding)*2 );
+    height: calc( 80% - var(--std_padding)*2 );
 
     font-size: 1.5em;
 
@@ -186,7 +186,7 @@ body, html {
     right: 0;
 
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
-    height: calc( 45% - var(--std_padding)*2 );
+    height: calc( 40% - var(--std_padding)*2 );
 
 }
 
@@ -197,7 +197,7 @@ body, html {
     right: 0;
 
     width: calc( 50% - var(--std_margin)/2 - var(--std_padding)*2 );
-    height: calc( 45% - var(--std_margin) - var(--std_padding)*2 );
+    height: calc( 40% - var(--std_margin) - var(--std_padding)*2 );
 
 }
 
