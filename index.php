@@ -4,7 +4,7 @@
     <head>
 
         <title><?php echo get_bloginfo( 'name' ); ?></title>
-        <meta name="description" content="<?php echo get_bloginfo( 'name' ); ?>">
+        <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css" ?>">
         <meta charset="utf-8">
