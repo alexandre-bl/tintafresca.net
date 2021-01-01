@@ -264,6 +264,12 @@ body, html {
 
 }
 
+#center.not_sigular .post_desc img {
+
+    display: none;
+
+}
+
 #center.not_sigular .post_desc {
 
     font-style: normal !important;
