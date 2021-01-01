@@ -124,7 +124,7 @@ body, html {
     top: calc( var(--border_w) + var(--std_margin) );
     left: calc( var(--border_w) + var(--std_margin) );
 
-    width: calc( 100% - var(--border_w)*2 - var(--std_margin)*2 - var(--std_padding)*2 );
+    width: calc( 100% - var(--border_w)*2 - var(--std_margin)*2 - var(--std_padding) );
     height: calc( 100% - var(--border_w) - var(--std_margin)*2 );
 
 }
