@@ -3,6 +3,8 @@
  
     <head>
 
+        <?php echo get_bloginfo( 'name' ); ?>
+
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css" ?>">
         <meta charset="utf-8">
 
