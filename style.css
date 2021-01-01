@@ -257,6 +257,13 @@ body, html {
 
 }
 
+.post a {
+
+    color: black;
+    text-decoration: none;
+
+}
+
 #center.not_sigular .post_desc strong,b {
 
     font-weight: normal !important;
