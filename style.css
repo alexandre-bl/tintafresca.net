@@ -150,12 +150,6 @@ body, html {
 
 }
 
-#center.singular p {
-
-    padding-bottom: 0.5em;
-
-}
-
 #st_post {
 
     position: absolute;
@@ -257,20 +251,20 @@ body, html {
 
 }
 
-.post_desc strong,b {
+#center.not_sigular .post_desc strong,b {
 
     font-weight: normal !important;
 
 }
 
-.post_desc p {
+#center.not_sigular .post_desc p {
 
     margin: 0;
     line-break: unset;
 
 }
 
-.post_desc {
+#center.not_sigular .post_desc {
 
     font-style: normal !important;
     white-space: unset;

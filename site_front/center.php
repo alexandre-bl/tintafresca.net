@@ -31,7 +31,7 @@ if( is_singular() ) {
 
 } else {
 
-	echo '>';
+	echo ' class="not_singular">';
 
 	$destaques = $posts = get_posts( array(
 	    'numberposts' => 3,
