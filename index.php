@@ -4,7 +4,7 @@
     <head>
 
         <title><?php echo get_bloginfo( 'name' ); ?></title>
-        <meta name="description" content="<?php echo get_globinfo("description"); ?>">
+        <meta name="description" content="Just another WordPress site">
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css" ?>">
         <meta charset="utf-8">
