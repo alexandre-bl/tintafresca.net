@@ -138,10 +138,9 @@ body, html {
 
 }
 
-#center.singular img {
+#center.singular img, .wp-caption {
 
-    width: 100%;
-    max-width: calc( 100% - var(--std_padding)*2 );
+    max-width: 100%;
 
 }
 
