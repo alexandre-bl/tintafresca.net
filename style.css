@@ -367,8 +367,14 @@ body, html {
 
     width: calc( 100% - var(--std_padding) - var(--std_margin) );
     margin-left: var(--std_margin);
-    height: 400px;
+    height: auto;
     padding: calc( var(--std_margin) / 2 );
+
+}
+
+#opinion .post_desc {
+
+    text-align: center;
 
 }
 
