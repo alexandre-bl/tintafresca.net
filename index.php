@@ -26,7 +26,7 @@ if( is_singular() and !empty( get_post_meta( $meta_desc ) ) ) {
     <head>
 
         <title><?php echo $title; ?></title>
-        <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
+        <meta name="description" content="<?php echo $desc; ?>">
         <link rel="icon" href="<?php echo get_site_icon_url(); ?>">
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css" ?>">
