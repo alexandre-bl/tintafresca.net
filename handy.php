@@ -1,6 +1,6 @@
 <?php
 
-function get_post_content($post, $singular=FALSE) {
+function get_post_content($post, $singular=FALSE, $opinion=FALSE ) {
 
     if( !empty($post->ID) ) {
 
@@ -14,7 +14,15 @@ function get_post_content($post, $singular=FALSE) {
 			
 		}
 
-        $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content ) ."</div>";
+        if( !$opinion ) {
+
+            $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content ) ."</div>";
+
+        } else {
+
+            $o .= "<div class='post_desc'>". wp_get_attachment_caption( get_post_thumbnail_id( $post->ID ) ) ."</div>";
+
+        }
 
 		return $o;
 
