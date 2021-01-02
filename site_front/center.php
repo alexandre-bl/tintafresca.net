@@ -53,7 +53,7 @@ if( is_singular() ) {
 	for( $i = 0; $i < count($posts); $i += 1 ) {
 	
 	    if( !in_array( $posts[$i], $destaques and
-			!in_array( $posts[$i], $opinion )   {
+			!in_array( $posts[$i], $opinion ) ) {
 	
 	        $thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
 	
