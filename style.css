@@ -254,8 +254,13 @@ body, html {
 .post img {
 
     display: none;
-    height: 0;
+
+}
+
+.post_desc img {
+
     width: 0;
+    height: 0;
 
 }
 
