@@ -175,7 +175,7 @@ body, html {
     max-height: none;
 
     width: 100%;
-    max-width: calc( 60% - var(--std_padding)*2 - 2em );
+    max-width: calc( 60% - var(--std_padding)*2 - 3em );
 
 }
 
