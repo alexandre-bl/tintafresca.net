@@ -4,7 +4,7 @@ $title = get_bloginfo( 'name' );
 
 if( is_singular() ) {
 
-    $title .= " - ". get_the_title();
+    $title .= " - " . get_the_title();
 
 }
 
@@ -15,7 +15,7 @@ if( is_singular() ) {
  
     <head>
 
-        <title><?php echo get_bloginfo( 'name' ); ?></title>
+        <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
         <link rel="icon" href="<?php echo get_site_icon_url(); ?>">
 
