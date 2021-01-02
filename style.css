@@ -18,6 +18,7 @@
     --std_padding: 2.5mm;
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
+    --main_h: 70;
 
 }
 
@@ -25,11 +26,11 @@ body, html {
 
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
 
     width: 900px;
     height: 100%; 
-    margin: auto;
+    margin: 0;
     padding: 0;
 
     font-family: Arial, Helvetica, sans-serif;
