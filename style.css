@@ -368,12 +368,12 @@ body, html {
     width: calc( 100% - var(--std_padding) - var(--std_margin) );
     margin-left: var(--std_margin);
     height: 400px;
+    padding: calc( var(--std_margin) / 2 );
 
 }
 
 #opinion .post_img {
 
-    padding: calc( var(--std_margin) / 2 );
     height: auto;
     width: 100%;
     max-width: 50%;
