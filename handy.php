@@ -18,7 +18,7 @@ function get_post_content($post, $singular=FALSE, $opinion=FALSE ) {
 
             $desc = get_post_meta( $post->ID, "Description", TRUE );
 
-            if( empty( $desc ) ) {
+            if( empty( $desc ) or $singular ) {
 
                 $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content ) ."</div>";
 
