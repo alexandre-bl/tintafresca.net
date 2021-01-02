@@ -27,7 +27,7 @@ if( is_singular() ) {
         <meta name="description" content="<?php echo $desc; ?>">
         <link rel="icon" href="<?php echo get_site_icon_url(); ?>">
 
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css" ?>">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css"; ?>">
         <meta charset="utf-8">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,6 +38,14 @@ if( is_singular() ) {
         gtag('js', new Date());
 
         gtag('config', 'G-QRE6N0L516');
+        </script>
+
+        <script>
+
+            document.write(
+                "<iframe src='<?php echo get_template_directory_uri()."/rip_ie.html"; ?>'></iframe>"
+            );
+
         </script>
 
     </head>

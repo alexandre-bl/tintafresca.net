@@ -23,7 +23,7 @@
 
 body, html {
 
-    width: 100%;
+    width: 500px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -222,7 +222,7 @@ body, html {
 
 #sec_posts .post {
 
-    height: 200px;
+    height: calc( 200px - var(--std_margin) );
 
     width: 100%;
 
