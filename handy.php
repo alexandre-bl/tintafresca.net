@@ -16,7 +16,7 @@ function get_post_content($post, $singular=FALSE, $opinion=FALSE ) {
 
         if( !$opinion ) {
 
-            $desc = get_post_meta( $post->ID, "Description" )
+            $desc = get_post_meta( $post->ID, "Description" );
 
             if( !empty( $desc ) ) {
 
