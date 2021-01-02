@@ -77,17 +77,23 @@ if( is_singular() ) {
 
 	?>
 
-	    <div class="post main" id="st_post">
-	        <?php echo $posts_markup["st"]; ?>
-	    </div>
+		<?php if( !empty( $posts_markup["st"] ) ) { ?>
+			<div class="post main" id="st_post">
+				<?php echo $posts_markup["st"]; ?>
+			</div>
+		<?php } ?>
 
-	    <div class="post main" id="nd_post">
-	        <?php echo $posts_markup["nd"]; ?>
-	    </div>
+	    <?php if( !empty( $posts_markup["nd"] ) ) { ?>
+			<div class="post main" id="nd_post">
+				<?php echo $posts_markup["nd"]; ?>
+			</div>
+		<?php } ?>
 	
-	    <div class="post main" id="trd_post">
-	        <?php echo $posts_markup["trd"]; ?>
-	    </div>
+	    <?php if( !empty( $posts_markup["trd"] ) ) { ?>
+			<div class="post main" id="trd_post">
+				<?php echo $posts_markup["trd"]; ?>
+			</div>
+		<?php } ?>
 
 	    <div id="sec_posts">
 	        <div id="left_posts">
