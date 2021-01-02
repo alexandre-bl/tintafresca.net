@@ -18,7 +18,8 @@
     --std_padding: 2.5mm;
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
-    --main_h: 400px;
+    --body_w: 1300px;
+    --main_h: calc( ( var(--body_w) - var(--border_w)*2 - var(--std_padding)*2 ) / 2 - var(--std_padding)/2 );
 
 }
 
@@ -29,7 +30,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, 0);
 
-    width: 1300px;
+    width: var(--body_w);
     max-width: 100%;
     height: 100%; 
     margin: 0;
