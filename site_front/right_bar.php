@@ -12,8 +12,8 @@ $query = $wpdb->get_results(" SELECT * FROM $table_name ");
 
 $add = array( "img" => "", "url" => "" );
 
-if( !empty( $query[1] ) ) { $add["img"] = $query[1]->img;
-                            $add["link"] = $query[1]->link; }
+if( !empty( $query[2] ) ) { $add["img"]  = $query[2]->img;
+                            $add["link"] = $query[2]->link; }
 
 ?>
 
