@@ -16,7 +16,17 @@ function get_post_content($post, $singular=FALSE, $opinion=FALSE ) {
 
         if( !$opinion ) {
 
-            $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content ) ."</div>";
+            $desc = get_post_meta( $post->ID, "Description" )
+
+            if( !empty( $desc ) ) {
+
+                $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content ) ."</div>";
+
+            } else {
+
+                $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $desc ) ."</div>";
+
+            }
 
         } else {
 
