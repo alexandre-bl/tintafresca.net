@@ -138,6 +138,12 @@ body, html {
 
 }
 
+#center.singular img {
+
+    max-width: calc( 100% - var(--std_padding)*2 );
+
+}
+
 #center.singular .post_title {
 
     margin-top: 0;
