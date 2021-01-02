@@ -7,7 +7,7 @@
         <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
         <link rel="icon" href="<?php echo get_site_icon_url(); ?>">
 
-        <link rel="stylesheet" href="<?php echo str_replace( "tintafresca.net", "tinta.alexandrebl.com", get_template_directory_uri() )."/style.css" ?>">
+        <link rel="stylesheet" href="<?php echo __DIR__."/style.css" ?>">
         <meta charset="utf-8">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
