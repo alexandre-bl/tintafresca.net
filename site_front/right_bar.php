@@ -23,7 +23,7 @@ $add = array(
     
     <?php
 
-    require_once "../handy.php";
+    require_once __DIR__ . "../handy.php";
 
     $opinion = get_posts( array(
 	    'numberposts' => 5,
