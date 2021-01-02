@@ -258,6 +258,13 @@ body, html {
 
 }
 
+.post_desc {
+
+    text-overflow: hidden;
+    overflow: ellipsis
+
+}
+
 .post img {
 
     display: none;
