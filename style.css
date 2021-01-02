@@ -260,8 +260,7 @@ body, html {
 
 .post_desc {
 
-    text-overflow: hidden;
-    overflow: ellipsis
+    text-overflow: ellipsis;
 
 }
 
