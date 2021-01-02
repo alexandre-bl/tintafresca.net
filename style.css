@@ -365,7 +365,7 @@ body, html {
 
 #opinion .post {
 
-    width: calc( var(--border_w) - var(--std_padding)*2 );
+    width: calc( 100% - var(--std_padding)*2 - var(--std_margin) );
 
 }
 
