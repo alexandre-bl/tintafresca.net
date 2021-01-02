@@ -254,6 +254,8 @@ body, html {
 .post img {
 
     display: none;
+    height: 0;
+    width: 0;
 
 }
 
