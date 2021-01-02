@@ -363,10 +363,9 @@ body, html {
 
 }
 
-#opinion .post_img {
+#opinion .post {
 
-    width: 100%;
-    max-height: 100%; 
+    width: calc( var(--border_w) - var(--std_padding)*2 );
 
 }
 
