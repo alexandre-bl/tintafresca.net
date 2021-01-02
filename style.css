@@ -367,7 +367,7 @@ body, html {
 
     width: calc( 100% - var(--std_padding)*2 - var(--std_margin) );
     margin-left: var(--std_margin);
-    height: 50px;
+    height: 100px;
 
 }
 
