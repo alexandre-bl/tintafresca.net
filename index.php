@@ -11,7 +11,7 @@ if( is_singular() ) {
 $desc = get_bloginfo( 'description' );
 $meta_desc = get_post_meta( get_post()->ID, "Description", TRUE );
 
-if( is_singular() and !empty( get_post_meta( $meta_desc ) ) {
+if( is_singular() and !empty( get_post_meta( $meta_desc ) ) ) {
 
     $desc = $meta_desc;
 
