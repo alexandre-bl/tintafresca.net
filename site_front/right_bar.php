@@ -19,4 +19,32 @@ $add = array(
     
     <a class="add" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
 
+    <div id="opinion">
+    
+    <?php
+
+    require_once "../handy.php";
+
+    $opinion = get_posts( array(
+	    'numberposts' => 5,
+	    "category" =>  get_cat_ID("Opinião")
+	  )
+    );
+    
+    for( $i = 0; $i < 5; $i += 1 ) {
+
+	    if( empty( $opinion[$i] ) ) {
+
+	        $opinion[$i] = null;
+
+	    }
+
+        echo get_post_content($opinion[$i]);
+
+	}
+
+    ?>
+
+    </div>
+
 </div>
