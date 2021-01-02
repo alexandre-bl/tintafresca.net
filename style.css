@@ -373,8 +373,10 @@ body, html {
 
 #opinion .post_img {
 
+    width: auto;
     height: 100%;
     max-width: 50%;
+    max-height: none;
 
 }
 
