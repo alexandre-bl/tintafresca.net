@@ -375,7 +375,7 @@ body, html {
 #opinion .post_desc {
 
     text-align: center;
-    margin: var(--std_margin);
+    margin: var(--std_margin) !important;
 
 }
 
@@ -386,7 +386,6 @@ body, html {
     height: auto;
     width: 100%;
     max-width: 100%;
-    float: left;
 
 }
 
