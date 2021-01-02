@@ -41,7 +41,7 @@ if( !empty( $query[2] ) ) { $add["img"]  = $query[2]->img;
 
 	    } else {
 
-            echo "<div class='post'>". get_post_content($opinion[$i]) ."</div>";
+            echo "<div class='post'>". get_post_content($opinion[$i], FALSE, TRUE) ."</div>";
  
         }
 
