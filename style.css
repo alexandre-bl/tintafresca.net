@@ -263,6 +263,11 @@ body, html {
     text-decoration: none;
 
 }
+.post p {
+
+    margin: 0;
+
+}
 
 #center.not_sigular .post_desc strong,b {
 
