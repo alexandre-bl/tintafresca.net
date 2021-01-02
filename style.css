@@ -277,6 +277,12 @@ body, html {
 
 }
 
+.post br {
+
+    display: none;
+
+}
+
 #center.not_sigular .post_desc strong,b {
 
     font-weight: normal !important;
