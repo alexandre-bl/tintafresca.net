@@ -40,14 +40,6 @@ if( is_singular() ) {
         gtag('config', 'G-QRE6N0L516');
         </script>
 
-        <script>
-
-            document.write(
-                "<iframe src='<?php echo get_template_directory_uri()."/rip_ie.html"; ?>'></iframe>"
-            );
-
-        </script>
-
     </head>
 
     <body> <?php
