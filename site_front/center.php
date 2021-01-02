@@ -14,6 +14,12 @@ if( is_singular() ) {
 
 	echo ' class="not_singular">';
 
+	$opinion = get_posts( array(
+	    'numberposts' => 5,
+	    "category" =>  get_cat_ID("Opinião")
+	  )
+    );
+
 	$destaques = $posts = get_posts( array(
 	    'numberposts' => 3,
 	    "category" =>  get_cat_ID("Destaques")
@@ -43,12 +49,11 @@ if( is_singular() ) {
 	                    );
 	
 	$destaques_n = 0;
-	
+
 	for( $i = 0; $i < count($posts); $i += 1 ) {
 	
-	    if( $posts[$i] != $destaques[0] and
-	        $posts[$i] != $destaques[1] and
-	        $posts[$i] != $destaques[2] )   {
+	    if( !in_array( $posts[$i], $destaques and
+			!in_array( $posts[$i], $opinion )   {
 	
 	        $thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
 	
