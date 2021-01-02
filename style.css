@@ -359,7 +359,7 @@ body, html {
 
 #opinion {
 
-    width: 100%;
+    width: var(--border_w);
 
 }
 
