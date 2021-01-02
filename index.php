@@ -1,3 +1,15 @@
+<?php
+
+$title = get_bloginfo( 'name' );
+
+if( is_singular() ) {
+
+    $title .= " - ". get_the_title();
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
  
