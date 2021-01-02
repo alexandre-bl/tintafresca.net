@@ -2,7 +2,7 @@
 
 <?php
 
-require_once __DIR__ . "../handy.php";
+require_once __DIR__ . "/../handy.php";
 
 if( is_singular() ) {
 
