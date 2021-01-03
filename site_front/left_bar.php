@@ -7,15 +7,6 @@ $categories = get_categories( array(
 $pages = get_pages();
 $pages_html = "";
 
-foreach( $pages as $page ) {
-
-    $page_link = get_page_link( $page->ID );
-    $page_title = $page->post_title;
-
-    $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
-
-}
-
 foreach( $categories as $category ) {
 
     if( $category->name != "Uncategorized" and
@@ -28,6 +19,15 @@ foreach( $categories as $category ) {
         $pages_html .= "<li><a href='$category_link'>$category_title</a></li>";
 
     }
+
+}
+
+foreach( $pages as $page ) {
+
+    $page_link = get_page_link( $page->ID );
+    $page_title = $page->post_title;
+
+    $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
 
 }
 
