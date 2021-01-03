@@ -45,6 +45,7 @@ if( is_singular() ) {
     <body> <?php
             
         require_once "site_front/header.php"; 
+        require_once "site_front/sub_header.php";
         require_once "site_front/left_bar.php";
         require_once "site_front/right_bar.php";
         require_once "site_front/center.php";
