@@ -8,8 +8,9 @@ $pages_html = "";
 
 foreach( $pages as $page ) {
 
-    if( $page->name != "Destaques" and
-        $page->name != "Opinião"   ) {
+    if( $page->name != "Uncategorized" and
+        $page->name != "Destaques"     and
+        $page->name != "Opinião"       ) {
 
         $page_link = get_site_url() . "?category=$page->name";
         $page_title = $page->name;
