@@ -108,7 +108,7 @@
 				<?php }
 
 			} else {
-				
+
 				$posts = get_posts( array(
 					'numberposts' => -1,
 					'category'	  => $_GET["category"] 
@@ -135,7 +135,7 @@
 
 			<div id="sec_posts"
 			
-				<?php if( empty( $_GET["category"] ) ) { echo "class='category'"; } ?>
+				<?php if( !empty( $_GET["category"] ) ) { echo "class='category'"; } ?>
 			
 			>
 				<div id="left_posts">
