@@ -111,11 +111,9 @@
 
 				$posts = get_posts( array(
 					'numberposts' => -1,
-					'category'	  => $_GET["category"] 
+					'category'	  => get_cat_ID( $_GET["category"] )
 					)
 				);
-
-				echo $_GET["category"];
 
 				for( $i = 0; $i < count($posts); $i += 1 ) {
 				
