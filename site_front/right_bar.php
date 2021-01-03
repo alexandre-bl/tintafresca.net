@@ -21,34 +21,34 @@ if( !empty( $query[2] ) ) { $add["img"]  = $query[2]->img;
     
     <a class="add" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
 
-    <div id="opinion">
-    
-    <?php
+    <?php if( !is_singular() ) { ?>
 
-    require_once __DIR__ . "/../handy.php";
+        <div id="opinion"> <?php
 
-    $opinion = get_posts( array(
-	    'numberposts' => 5,
-	    "category" =>  get_cat_ID("Opinião")
-	  )
-    );
-    
-    for( $i = 0; $i < 5; $i += 1 ) {
+            require_once __DIR__ . "/../handy.php";
 
-	    if( empty( $opinion[$i] ) ) {
+            $opinion = get_posts( array(
+                'numberposts' => 5,
+                "category" =>  get_cat_ID("Opinião")
+            )
+            );
+            
+            for( $i = 0; $i < 5; $i += 1 ) {
 
-	        $opinion[$i] = null;
+                if( empty( $opinion[$i] ) ) {
 
-	    } else {
+                    $opinion[$i] = null;
 
-            echo "<div class='post'>". get_post_content($opinion[$i], FALSE, TRUE) ."</div>";
- 
-        }
+                } else {
 
-	}
+                    echo "<div class='post'>". get_post_content($opinion[$i], FALSE, TRUE) ."</div>";
+        
+                }
 
-    ?>
+            }
 
-    </div>
+        ?> </div>
+
+    <?php } ?>
 
 </div>
