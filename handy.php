@@ -39,3 +39,12 @@ function get_post_content($post, $singular=FALSE, $opinion=FALSE ) {
     }
 
 }
+
+function get_edition() {
+
+    $date    = getdate();
+    $edition = $date["year"]*12 + $date["mon"] - 24011;
+
+    return $edition;
+
+}
