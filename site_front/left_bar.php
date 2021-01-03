@@ -1,19 +1,29 @@
 <?php
 
-$pages = get_categories( array(
+$categories = get_categories( array(
     'orderby' => 'name',
     'order'   => 'ASC'
 ) );
+$pages = get_pages();
 $pages_html = "";
 
 foreach( $pages as $page ) {
 
-    if( $page->name != "Uncategorized" and
-        $page->name != "Destaques"     and
-        $page->name != "Opinião"       ) {
+    $category_link = get_page_link( $page->ID );
+    $category_title = $page->post_title;
 
-        $page_link = get_site_url() . "?category=$page->name";
-        $page_title = $page->name;
+    $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
+
+}
+
+foreach( $categories as $category ) {
+
+    if( $category->name != "Uncategorized" and
+        $category->name != "Destaques"     and
+        $category->name != "Opinião"       ) {
+
+        $category_link = get_site_url() . "?category=$category->name";
+        $category_title = $category->name;
 
         $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
 
