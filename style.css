@@ -443,7 +443,7 @@ body, html {
 
     position: absolute;
     top: 50%;
-    left: var(--std_margin);
+    left: 10%;
     transform: translate(0,-50%);
 
     margin: 0;
@@ -455,7 +455,7 @@ body, html {
 
     position: absolute;
     top: 50%;
-    right: var(--std_margin);
+    right: 10%;
     transform: translate(0,-50%);
 
     margin: 0;
