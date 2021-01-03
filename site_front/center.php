@@ -115,6 +115,8 @@
 					)
 				);
 
+				echo $_GET["category"];
+
 				for( $i = 0; $i < count($posts); $i += 1 ) {
 				
 					$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
