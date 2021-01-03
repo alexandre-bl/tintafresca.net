@@ -418,9 +418,11 @@ body, html {
     top: calc( var(--border_w) + var(--std_margin) );
     left: calc( var(--border_w) + var(--std_margin) );
 
-    background-color: var(--background_2);
+    background-color: var(--background_3);
+
     width: calc( 100% - var(--border_w)*2 - var(--std_margin) - var(--std_padding)*2 );
     height: calc( var(--subh_h) - var(--std_padding)*2 );
+    
     padding: var(--std_padding); 
 
 }
@@ -431,7 +433,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
+
     margin: 0;
     padding: 0;
 
