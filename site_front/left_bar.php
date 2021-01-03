@@ -1,12 +1,15 @@
 <?php
 
-$pages = get_pages();
+$pages = get_categories( array(
+    'orderby' => 'name',
+    'order'   => 'ASC'
+) );
 $pages_html = "";
 
 foreach( $pages as $page ) {
 
-    $page_link = get_page_link( $page->ID );
-    $page_title = $page->post_title;
+    $page_link = get_site_url() . "?category='$page->name'";
+    $page_title = $page->name;
 
     $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
 
