@@ -420,7 +420,7 @@ body, html {
 
     background-color: var(--background_2);
     width: calc( 100% - var(--border_w)*2 - var(--std_margin) - var(--std_padding)*2 );
-    height: var(--subh_h);
+    height: calc( var(--subh_h) - var(--std_padding)*2 );
     padding: var(--std_padding);
 
 }
