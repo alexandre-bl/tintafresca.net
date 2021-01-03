@@ -2,7 +2,7 @@
 
 $editor  = "Mario Lopes";
 $date    = getdate();
-$edition = 2021*12 + 12 - 24011; # 242
+$edition = 2022*12 + 1 - 24011; # 242
 $date    = $date["mday"] . "/" . $date["mon"] . "/" . $date["year"];
 
 ?>
