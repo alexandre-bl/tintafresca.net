@@ -1,9 +1,9 @@
 <?php
 
-$edition = 123;
 $editor  = "Mario Lopes";
-$date    =  getdate();
-$date    =  $date["mday"] . "/" . $date["mon"] . "/" . $date["year"];
+$date    = getdate();
+$edition = 2021*12 + 1 - 24011; # 242
+$date    = $date["mday"] . "/" . $date["mon"] . "/" . $date["year"];
 
 ?>
 
