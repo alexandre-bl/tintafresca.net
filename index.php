@@ -31,13 +31,13 @@ if( is_singular() ) {
         <meta charset="utf-8">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRE6N0L516"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNCE36250T"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-QRE6N0L516');
+        gtag('config', 'G-QNCE36250T');
         </script>
 
     </head>
