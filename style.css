@@ -342,7 +342,7 @@ body, html {
 
     display: block !important;
 
-    float: left;
+    float: left; 
     padding: var(--std_padding);
 
     height: 100%;
