@@ -1,109 +1,123 @@
 <div id="center"
 
-<?php
+	<?php
 
-require_once __DIR__ . "/../handy.php";
+		require_once __DIR__ . "/../handy.php";
 
-if( is_singular() ) {
+		if( is_singular() ) {
 
-	echo ' class="singular">';
+			echo ' class="singular">';
 
-	echo get_post_content( get_post(), TRUE );
+			echo get_post_content( get_post(), TRUE );
 
-} else {
+		} else {
 
-	echo ' class="not_singular">';
+			echo ' class="not_singular">';
 
-	$opinion = get_posts( array(
-	    'numberposts' => 5,
-	    "category" =>  get_cat_ID("Opinião")
-	  )
-    );
+			$opinion = get_posts( array(
+				'numberposts' => 5,
+				"category" =>  get_cat_ID("Opinião")
+			)
+			);
 
-	$destaques = $posts = get_posts( array(
-	    'numberposts' => 3,
-	    "category" =>  get_cat_ID("Destaques")
-	  )
-	);
+			$destaques = $posts = get_posts( array(
+				'numberposts' => 3,
+				"category" =>  get_cat_ID("Destaques")
+			)
+			);
 
-	for( $i = 0; $i < 3; $i += 1 ) {
+			for( $i = 0; $i < 3; $i += 1 ) {
 
-	    if( empty( $destaques[$i] ) ) {
+				if( empty( $destaques[$i] ) ) {
 
-	        $destaques[$i] = null;
+					$destaques[$i] = null;
 
-	    }
+				}
 
-	}
+			}
 
-	$posts = get_posts( array(
-	    'numberposts' => -1 
-	  )
-	);
-	
-	$posts_markup = array(  "st"    => get_post_content($destaques[0]),
-	                        "nd"    => get_post_content($destaques[1]),
-	                        "trd"   => get_post_content($destaques[2]),
-	                        "left"  => "",
-	                        "right" => ""
-	                    );
-	
-	$destaques_n = 0;
+			$posts = get_posts( array(
+				'numberposts' => -1 
+			)
+			);
+			
+			$posts_markup = array(  "st"    => get_post_content($destaques[0]),
+									"nd"    => get_post_content($destaques[1]),
+									"trd"   => get_post_content($destaques[2]),
+									"left"  => "",
+									"right" => ""
+								);
+			
+			$destaques_n = 0;
 
-	for( $i = 0; $i < count($posts); $i += 1 ) {
-	
-	    if( !in_array( $posts[$i], $destaques ) and
-			!in_array( $posts[$i], $opinion ) ) {
-	
-	        $thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
-	
-	        if( ( $i - $destaques_n ) % 2 == 0 ) {
-	
-	            $posts_markup["left"] .= $thumbnail;
-	
-	        } else {
-	
-	            $posts_markup["right"] .= $thumbnail;
-	
-	        }
-	
-	    } else {
-	
-	        $destaques_n += 1;
-	
-	    }
-	
-	}	
+			if( empty( $_GET["category"] ) ) {
 
-	?>
+				for( $i = 0; $i < count($posts); $i += 1 ) {
+				
+					if( !in_array( $posts[$i], $destaques ) and
+						!in_array( $posts[$i], $opinion ) ) {
+				
+						$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
+				
+						if( ( $i - $destaques_n ) % 2 == 0 ) {
+				
+							$posts_markup["left"] .= $thumbnail;
+				
+						} else {
+				
+							$posts_markup["right"] .= $thumbnail;
+				
+						}
+				
+					} else {
+				
+						$destaques_n += 1;
+				
+					}
+				
+				}	
 
-		<?php if( !empty( $posts_markup["st"] ) ) { ?>
-			<div class="post main" id="st_post">
-				<?php echo $posts_markup["st"]; ?>
+				if( !empty( $posts_markup["st"] ) ) { ?>
+					
+					<div class="post main" id="st_post">
+
+						<?php echo $posts_markup["st"]; ?>
+
+					</div> 
+					
+				<?php }
+					
+				if( !empty( $posts_markup["nd"] ) ) { ?>
+					
+					<div class="post main" id="nd_post">
+
+						<?php echo $posts_markup["nd"]; ?>
+
+					</div> 
+					
+				<?php }
+
+				if( !empty( $posts_markup["trd"] ) ) { ?>
+					
+					<div class="post main" id="trd_post">
+
+						<?php echo $posts_markup["trd"]; ?>
+
+					</div> 
+					
+				<?php }
+
+			} ?>
+
+			<div id="sec_posts">
+				<div id="left_posts">
+					<?php echo $posts_markup["left"]; ?>
+				</div>
+				<div id="right_posts">
+					<?php echo $posts_markup["right"]; ?>
+				</div>
 			</div>
-		<?php } ?>
 
-	    <?php if( !empty( $posts_markup["nd"] ) ) { ?>
-			<div class="post main" id="nd_post">
-				<?php echo $posts_markup["nd"]; ?>
-			</div>
 		<?php } ?>
-	
-	    <?php if( !empty( $posts_markup["trd"] ) ) { ?>
-			<div class="post main" id="trd_post">
-				<?php echo $posts_markup["trd"]; ?>
-			</div>
-		<?php } ?>
-
-	    <div id="sec_posts">
-	        <div id="left_posts">
-	            <?php echo $posts_markup["left"]; ?>
-	        </div>
-	        <div id="right_posts">
-	            <?php echo $posts_markup["right"]; ?>
-	        </div>
-	    </div>
-
-	<?php } ?>
 
 </div>
