@@ -229,6 +229,14 @@ body, html {
 
 }
 
+#sec_posts.category {
+
+    position: absolute;
+    top: 0;
+    left: 0;    
+
+}
+
 #sec_posts .post {
 
     height: calc( var(--main_h)/2 - var(--std_margin) );

@@ -108,7 +108,7 @@
 				<?php }
 
 			} else {
-
+				
 				$posts = get_posts( array(
 					'numberposts' => -1,
 					'category'	  => $_GET["category"] 
