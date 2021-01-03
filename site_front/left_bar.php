@@ -8,10 +8,15 @@ $pages_html = "";
 
 foreach( $pages as $page ) {
 
-    $page_link = get_site_url() . "?category=$page->name";
-    $page_title = $page->name;
+    if( $page->name != "Destaques" and
+        $page->name != "Opinião"   ) {
 
-    $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
+        $page_link = get_site_url() . "?category=$page->name";
+        $page_title = $page->name;
+
+        $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
+
+    }
 
 }
 
