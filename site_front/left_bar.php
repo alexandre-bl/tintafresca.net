@@ -9,8 +9,8 @@ $pages_html = "";
 
 foreach( $pages as $page ) {
 
-    $category_link = get_page_link( $page->ID );
-    $category_title = $page->post_title;
+    $page_link = get_page_link( $page->ID );
+    $page_title = $page->post_title;
 
     $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
 
@@ -25,7 +25,7 @@ foreach( $categories as $category ) {
         $category_link = get_site_url() . "?category=$category->name";
         $category_title = $category->name;
 
-        $pages_html .= "<li><a href='$page_link'>$page_title</a></li>";
+        $pages_html .= "<li><a href='$category_link'>$category_title</a></li>";
 
     }
 
