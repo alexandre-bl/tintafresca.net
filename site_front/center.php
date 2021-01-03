@@ -23,7 +23,7 @@
 			$destaques = $posts = get_posts( array(
 				'numberposts' => 3,
 				"category" =>  get_cat_ID("Destaques")
-			)
+				)
 			);
 
 			for( $i = 0; $i < 3; $i += 1 ) {
@@ -38,7 +38,7 @@
 
 			$posts = get_posts( array(
 				'numberposts' => -1 
-			)
+				)
 			);
 			
 			$posts_markup = array(  "st"    => get_post_content($destaques[0]),
@@ -50,32 +50,32 @@
 			
 			$destaques_n = 0;
 
-			for( $i = 0; $i < count($posts); $i += 1 ) {
-				
-				if( !in_array( $posts[$i], $destaques ) and
-					!in_array( $posts[$i], $opinion ) ) {
-			
-					$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
-			
-					if( ( $i - $destaques_n ) % 2 == 0 ) {
-			
-						$posts_markup["left"] .= $thumbnail;
-			
-					} else {
-			
-						$posts_markup["right"] .= $thumbnail;
-			
-					}
-			
-				} else {
-			
-					$destaques_n += 1;
-			
-				}
-			
-			}
+			if( empty( $_GET["category"] ) ) {
 
-			if( empty( $_GET["category"] ) ) {	
+				for( $i = 0; $i < count($posts); $i += 1 ) {
+				
+					if( !in_array( $posts[$i], $destaques ) and
+						!in_array( $posts[$i], $opinion ) ) {
+				
+						$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
+				
+						if( ( $i - $destaques_n ) % 2 == 0 ) {
+				
+							$posts_markup["left"] .= $thumbnail;
+				
+						} else {
+				
+							$posts_markup["right"] .= $thumbnail;
+				
+						}
+				
+					} else {
+				
+						$destaques_n += 1;
+				
+					}
+				
+				}	
 
 				if( !empty( $posts_markup["st"] ) ) { ?>
 					
@@ -107,9 +107,37 @@
 					
 				<?php }
 
+			} else {
+
+				$posts = get_posts( array(
+					'numberposts' => -1,
+					'category'	  => $_GET["category"] 
+					)
+				);
+
+				for( $i = 0; $i < count($posts); $i += 1 ) {
+				
+					$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
+			
+					if( ( $i ) % 2 == 0 ) {
+			
+						$posts_markup["left"] .= $thumbnail;
+			
+					} else {
+			
+						$posts_markup["right"] .= $thumbnail;
+			
+					}
+				
+				}
+				
 			} ?>
 
-			<div id="sec_posts">
+			<div id="sec_posts"
+			
+				<?php if( empty( $_GET["category"] ) ) { echo "class='category'"; } ?>
+			
+			>
 				<div id="left_posts">
 					<?php echo $posts_markup["left"]; ?>
 				</div>
