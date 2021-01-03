@@ -346,7 +346,7 @@ body, html {
     padding: var(--std_padding);
 
     height: 100%;
-    max-height: calc( 100% - var(--std_padding)*2 - 2em );
+    max-height: calc( 80% - var(--std_padding)*2 );
 
 }
 
