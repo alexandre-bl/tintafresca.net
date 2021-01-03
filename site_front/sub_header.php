@@ -2,8 +2,8 @@
 
 $edition = 123;
 $editor  = "Mario Lopes";
-$date    =  get_date();
-$date    =  get_date()["mday"] . "/" . get_date()["month"] . "/" . get_date()["year"];
+$date    =  getdate();
+$date    =  $date["mday"] . "/" . $date()["month"] . "/" . $date()["year"];
 
 ?>
 
