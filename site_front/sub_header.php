@@ -11,8 +11,8 @@ $date    = $date["mday"] . "/" . $date["mon"] . "/" . $date["year"];
 
 <div id="sub-header">
 
-    <p id="edition"> Edição: <?php echo $edition;   ?></p>
-    <p id="editor">  Editor: <?php echo $editor;    ?></p>
-    <p id="date">    Data:   <?php echo $date;      ?></p> 
+    <p id="edition"> Edição:  <?php echo $edition;   ?></p>
+    <p id="editor">  Diretor: <?php echo $editor;    ?></p>
+    <p id="date">    Data:    <?php echo $date;      ?></p> 
 
 </div>
