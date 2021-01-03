@@ -3,7 +3,7 @@
 $edition = 123;
 $editor  = "Mario Lopes";
 $date    =  getdate();
-$date    =  $date["mday"] . "/" . $date()["month"] . "/" . $date()["year"];
+$date    =  $date["mday"] . "/" . $date["month"] . "/" . $date["year"];
 
 ?>
 
