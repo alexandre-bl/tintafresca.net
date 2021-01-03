@@ -50,32 +50,32 @@
 			
 			$destaques_n = 0;
 
-			if( empty( $_GET["category"] ) ) {
-
-				for( $i = 0; $i < count($posts); $i += 1 ) {
+			for( $i = 0; $i < count($posts); $i += 1 ) {
 				
-					if( !in_array( $posts[$i], $destaques ) and
-						!in_array( $posts[$i], $opinion ) ) {
-				
-						$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
-				
-						if( ( $i - $destaques_n ) % 2 == 0 ) {
-				
-							$posts_markup["left"] .= $thumbnail;
-				
-						} else {
-				
-							$posts_markup["right"] .= $thumbnail;
-				
-						}
-				
+				if( !in_array( $posts[$i], $destaques ) and
+					!in_array( $posts[$i], $opinion ) ) {
+			
+					$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
+			
+					if( ( $i - $destaques_n ) % 2 == 0 ) {
+			
+						$posts_markup["left"] .= $thumbnail;
+			
 					} else {
-				
-						$destaques_n += 1;
-				
+			
+						$posts_markup["right"] .= $thumbnail;
+			
 					}
-				
-				}	
+			
+				} else {
+			
+					$destaques_n += 1;
+			
+				}
+			
+			}
+
+			if( empty( $_GET["category"] ) ) {	
 
 				if( !empty( $posts_markup["st"] ) ) { ?>
 					
