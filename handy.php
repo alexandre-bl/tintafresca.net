@@ -10,7 +10,7 @@ function get_post_content($post, $singular=FALSE, $opinion=FALSE ) {
         
         if( !$singular ) {
 
-        	$o .= "<img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
+        	$o .= "<div id='img_box'><img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'></div>";
 			
 		}
 
