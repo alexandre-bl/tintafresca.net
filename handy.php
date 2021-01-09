@@ -1,6 +1,6 @@
 <?php
 
-function get_post_content($post, $singular=FALSE, $opinion=FALSE ) {
+function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
     if( !empty($post->ID) ) {
 
