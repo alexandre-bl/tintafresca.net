@@ -40,6 +40,9 @@ if( is_singular() ) {
         gtag('config', 'G-QNCE36250T');
         </script>
 
+        <!-- Makes it so some CSS features I need that aren't on IE work on IE -->
+        <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+
     </head>
 
     <body> <?php

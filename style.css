@@ -18,7 +18,7 @@
     --std_padding: 2.5mm;
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
-    --body_w: 1300px;
+    --body_w: 1366px;
     --main_h: calc( ( var(--body_w) - var(--border_w)*2 - var(--std_padding)*2 ) / 2 - var(--std_padding)/2 );
     --subh_h: 1.5em;
 
