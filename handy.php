@@ -34,7 +34,7 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
         }
 
-		return $o;
+		return str_replace( "http://tintafresca.net", "https://tintafresca.net", $o );
 
     }
 
