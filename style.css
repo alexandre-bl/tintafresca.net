@@ -12,384 +12,386 @@
 */
 
 :root {
-  --border_w: 150px;
-  --std_margin: 5px;
-  --std_padding: 2.5mm;
-  --background_2: #f3f3f3;
-  --background_3: #fcfcfc;
-  --body_w: 1366px;
-  --main_h: calc(
-    (var(--body_w) - var(--border_w) * 2 - var(--std_padding) * 2) / 2 -
-      var(--std_padding) / 2
-  );
-  --subh_h: 1.5em;
+    --border_w: 150px;
+    --std_margin: 5px;
+    --std_padding: 2.5mm;
+    --background_2: #f3f3f3;
+    --background_3: #fcfcfc;
+    --body_w: 1366px;
+    --main_h: calc(
+        (var(--body_w) - var(--border_w) * 2 - var(--std_padding) * 2) / 2 -
+            var(--std_padding) / 2
+    );
+    --subh_h: 1.5em;
 }
 
 body,
 html {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: var(--body_w);
-  max-width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: var(--body_w);
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #header {
-  height: var(--border_w);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+    height: var(--border_w);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #logo {
-  height: var(--border_w);
-  width: var(--border_w);
-  position: absolute;
-  top: 0;
-  left: 0;
+    height: var(--border_w);
+    width: var(--border_w);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #header .add {
-  height: var(--border_w);
-  width: calc(100% - var(--border_w) * 2 - var(--std_margin));
-  position: absolute;
-  top: 0;
-  right: var(--border_w);
+    height: var(--border_w);
+    width: calc(100% - var(--border_w) * 2 - var(--std_margin));
+    position: absolute;
+    top: 0;
+    right: var(--border_w);
 }
 
 #left_bar .add {
-  width: var(--border_w);
-  height: calc(100% - var(--border_w) * 2 - var(--std_margin));
+    width: var(--border_w);
+    height: calc(100% - var(--border_w) * 2 - var(--std_margin));
 }
 
 #right_bar .add {
-  width: var(--border_w);
-  height: calc(100% - var(--border_w) * 2 - var(--std_margin));
+    width: var(--border_w);
+    height: calc(100% - var(--border_w) * 2 - var(--std_margin));
 }
 
 #left_bar {
-  position: absolute;
-  top: calc(var(--border_w) + var(--std_margin));
-  left: 0;
-  width: var(--border_w);
-  height: calc(100% - var(--border_w) - var(--std_margin) * 2);
+    position: absolute;
+    top: calc(var(--border_w) + var(--std_margin));
+    left: 0;
+    width: var(--border_w);
+    height: calc(100% - var(--border_w) - var(--std_margin) * 2);
 }
 
 #right_bar {
-  position: absolute;
-  top: calc(var(--border_w) + var(--std_margin));
-  right: 0;
-  width: var(--border_w);
-  height: calc(100% - var(--border_w) - var(--std_margin) * 2);
+    position: absolute;
+    top: calc(var(--border_w) + var(--std_margin));
+    right: 0;
+    width: var(--border_w);
+    height: calc(100% - var(--border_w) - var(--std_margin) * 2);
 }
 
 #left_bar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 #left_bar li {
-  list-style-type: none;
-  width: calc(100% - var(--std_margin) * 2);
-  padding: var(--std_margin);
-  text-align: center;
+    list-style-type: none;
+    width: calc(100% - var(--std_margin) * 2);
+    padding: var(--std_margin);
+    text-align: center;
 }
 
 #center {
-  position: absolute;
-  top: calc(
-    var(--border_w) + var(--std_margin) + var(--subh_h) + var(--std_margin)
-  );
-  left: calc(var(--border_w) + var(--std_margin));
-  width: calc(100% - var(--border_w) * 2 - var(--std_margin));
-  height: calc(100% - var(--border_w) - var(--std_margin) * 2);
+    position: absolute;
+    top: calc(
+        var(--border_w) + var(--std_margin) + var(--subh_h) + var(--std_margin)
+    );
+    left: calc(var(--border_w) + var(--std_margin));
+    width: calc(100% - var(--border_w) * 2 - var(--std_margin));
+    height: calc(100% - var(--border_w) - var(--std_margin) * 2);
 }
 
 #center.singular {
-  background-color: var(--background_2);
-  padding: var(--std_padding);
-  width: calc(100% - var(--border_w) * 2 - var(--std_margin) * 5);
-  height: auto !important;
+    background-color: var(--background_2);
+    padding: var(--std_padding);
+    width: calc(100% - var(--border_w) * 2 - var(--std_margin) * 5);
+    height: auto !important;
 }
 
 #center.singular img,
 #center.singular .wp-caption {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 #center.singular .post_title {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 #center.singular h1 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 #st_post {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-  height: calc(var(--main_h) - var(--std_padding) * 2);
-  font-size: 1.1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
+    height: calc(var(--main_h) - var(--std_padding) * 2);
+    font-size: 1.1em;
 }
 
 #st_post h1 {
-  font-size: 1.25em;
+    font-size: 1.25em;
 }
 
 #st_post img {
-  height: auto;
-  max-height: none;
-  width: 100%;
-  max-width: calc(60% - var(--std_padding) * 2 - 2em);
+    height: auto;
+    max-height: none;
+    width: 100%;
+    max-width: calc(60% - var(--std_padding) * 2 - 2em);
 }
 
 #nd_post {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-  height: calc(var(--main_h) / 2 - var(--std_padding) * 2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
+    height: calc(var(--main_h) / 2 - var(--std_padding) * 2);
 }
 
 #trd_post {
-  position: absolute;
-  top: calc(var(--main_h) / 2 + var(--std_margin));
-  right: 0;
-  width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-  height: calc(var(--main_h) / 2 - var(--std_margin) - var(--std_padding) * 2);
+    position: absolute;
+    top: calc(var(--main_h) / 2 + var(--std_margin));
+    right: 0;
+    width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
+    height: calc(
+        var(--main_h) / 2 - var(--std_margin) - var(--std_padding) * 2
+    );
 }
 
 #sec_posts {
-  position: absolute;
-  top: var(--main_h);
-  left: 0;
-  margin-top: var(--std_margin);
-  width: 100%;
-  min-height: 50%;
+    position: absolute;
+    top: var(--main_h);
+    left: 0;
+    margin-top: var(--std_margin);
+    width: 100%;
+    min-height: 50%;
 }
 
 #sec_posts.category {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #sec_posts .post {
-  height: calc(var(--main_h) / 2 - var(--std_margin));
-  width: 100%;
+    height: calc(var(--main_h) / 2 - var(--std_margin));
+    width: 100%;
 }
 
 #right_posts {
-  position: absolute;
-  top: 0;
-  left: calc(50% + var(--std_margin) / 2);
-  width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
+    position: absolute;
+    top: 0;
+    left: calc(50% + var(--std_margin) / 2);
+    width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
 }
 
 #left_posts {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
 }
 
 .post {
-  background-color: var(--background_2);
-  padding: var(--std_padding);
-  font-size: 1em;
-  overflow: hidden;
-  display: inline-block;
+    background-color: var(--background_2);
+    padding: var(--std_padding);
+    font-size: 1em;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .post_desc {
-  text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
 
 .post img {
-  display: none;
+    display: none;
 }
 
 #center.not_sigular .post_desc img {
-  width: 0 !important;
-  height: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 
 .post a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 .post p {
-  margin: 0;
-  line-break: 0;
+    margin: 0;
+    line-break: 0;
 }
 
 .post br {
-  display: none;
+    display: none;
 }
 
 #center.not_sigular .post_desc strong,
 b {
-  font-weight: normal !important;
+    font-weight: normal !important;
 }
 
 #center.not_sigular .post_desc p {
-  margin: 0;
-  line-break: unset;
+    margin: 0;
+    line-break: unset;
 }
 
 #center.not_sigular .post_desc {
-  font-style: normal !important;
-  white-space: unset;
+    font-style: normal !important;
+    white-space: unset;
 }
 
 .post_title {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 .post_title a {
-  text-decoration: unset;
-  color: black;
+    text-decoration: unset;
+    color: black;
 }
 
 .post_img {
-  display: block !important;
-  float: left;
-  padding: var(--std_padding);
-  height: 100%;
-  max-height: calc(80% - var(--std_padding) * 2);
+    display: block !important;
+    float: left;
+    padding: var(--std_padding);
+    height: 100%;
+    max-height: calc(80% - var(--std_padding) * 2);
 }
 
 .add {
-  background-color: var(--background_3);
+    background-color: var(--background_3);
 }
 
 #header .add img {
-  height: 100%;
-  max-width: 100%;
-  display: block;
-  margin: auto;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
 #left_bar .add img {
-  width: 100%;
-  max-height: 100%;
+    width: 100%;
+    max-height: 100%;
 }
 
 #right_bar .add img {
-  width: 100%;
-  max-height: 100%;
+    width: 100%;
+    max-height: 100%;
 }
 
 #opinion {
-  width: var(--border_w);
+    width: var(--border_w);
 }
 
 #opinion .post {
-  width: calc(100% - var(--std_padding) - var(--std_margin));
-  margin-left: var(--std_margin);
-  height: auto;
-  padding: calc(var(--std_margin) / 2);
+    width: calc(100% - var(--std_padding) - var(--std_margin));
+    margin-left: var(--std_margin);
+    height: auto;
+    padding: calc(var(--std_margin) / 2);
 }
 
 #opinion .post_desc {
-  text-align: center;
-  margin: var(--std_margin) !important;
+    text-align: center;
+    margin: var(--std_margin) !important;
 }
 
 #opinion .post_img {
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-  float: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    float: none;
 }
 
 #sub-header {
-  position: absolute;
-  top: calc(var(--border_w) + var(--std_margin));
-  left: calc(var(--border_w) + var(--std_margin));
-  background-color: var(--background_2);
-  width: calc(
-    100% - var(--border_w) * 2 - var(--std_margin) - var(--std_padding) * 2
-  );
-  height: calc(var(--subh_h) - var(--std_padding) * 2);
-  padding: var(--std_padding);
+    position: absolute;
+    top: calc(var(--border_w) + var(--std_margin));
+    left: calc(var(--border_w) + var(--std_margin));
+    background-color: var(--background_2);
+    width: calc(
+        100% - var(--border_w) * 2 - var(--std_margin) - var(--std_padding) * 2
+    );
+    height: calc(var(--subh_h) - var(--std_padding) * 2);
+    padding: var(--std_padding);
 }
 
 #editor {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
 }
 
 #edition {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(0, -50%);
-  margin: 0;
-  padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    margin: 0;
+    padding: 0;
 }
 
 #date {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translate(0, -50%);
-  margin: 0;
-  padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0, -50%);
+    margin: 0;
+    padding: 0;
 }
 
 /* I don't even know anymore: */
 img.alignright {
-  float: right;
-  margin: 0 0 1em 1em;
+    float: right;
+    margin: 0 0 1em 1em;
 }
 img.alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
+    float: left;
+    margin: 0 1em 1em 0;
 }
 img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .alignright {
-  float: right;
+    float: right;
 }
 .alignleft {
-  float: left;
+    float: left;
 }
 .aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .wp-caption-text {
-  text-align: center;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-weight: bold;
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-weight: bold;
 }
 .post .wp-caption {
-  display: none;
-  height: 0;
-  width: 0 !important;
-  overflow: visible;
-  z-index: 3;
+    display: none;
+    height: 0;
+    width: 0 !important;
+    overflow: visible;
+    z-index: 3;
 }
