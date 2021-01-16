@@ -253,7 +253,8 @@ b {
 .post_img {
     display: block !important;
     float: left;
-    padding: var(--std_padding), var(--std_padding), var(--std_padding), 0;
+    padding: var(--std_padding);
+    padding-left: 0;
 }
 
 .add {
