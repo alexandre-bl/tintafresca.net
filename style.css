@@ -194,7 +194,7 @@ html {
 
 .post {
     background-color: var(--background_2);
-    padding: var(--std_padding);
+    padding: var(--std_padding), var(--std_padding), var(--std_padding), 0;
     font-size: 1em;
     overflow: hidden;
     display: inline-block;
