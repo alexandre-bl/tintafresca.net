@@ -1,13 +1,14 @@
-function image_size(img, wp, hp, tp) {
+function image_size(img, wp, hp, tp, m) {
     let parent = img.parent;
     let width = img.offsetWidth;
     let height = img.offsetHeight;
     let p_width = img.offsetWidth;
     let p_height = parent.offsetHeight;
-    let top = parent.offsetLeft;
+    let top = parent.offsetTop;
 
     if (height >= width) {
-        img.style.height;
+        img.style.height = (p_height - top - m) * hp;
     } else {
+        img.style.width = (p_width - top - m) * wp;
     }
 }
