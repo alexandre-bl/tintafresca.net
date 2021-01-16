@@ -13,12 +13,12 @@
 
 :root {
     --border_w: 150px;
-    --std_margin: 5px;
+    --std_margin: 4px;
     --std_padding: 2.5mm;
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
     --body_w: 1366px;
-    --main_h: 410px;
+    --main_h: 404px;
     --subh_h: 1.5em;
 }
 
@@ -138,7 +138,7 @@ html {
     left: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(var(--main_h) - var(--std_padding) * 2);
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #st_post h1 {
