@@ -7,9 +7,11 @@ function image_size(img, wp, hp, tp, m) {
     let top = parent.offsetTop;
 
     if (height >= width) {
-        img.style.height = p_height - top - m;
+        img.style.height = "100%";
+        img.style.maxHeight = (p_height - top - margin) * hp;
     } else {
-        img.style.width = p_width - top - m;
+        img.style.width = "100%";
+        img.style.maxWidth = (p_width - top - margin) * wp;
     }
 }
 
