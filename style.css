@@ -259,6 +259,7 @@ b {
 
 .post_title {
     font-size: 1em;
+    margin-top: 0;
 }
 
 .post_title a {
