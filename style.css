@@ -14,7 +14,7 @@
 :root {
     --border_w: 150px;
     --std_margin: 4px;
-    --std_padding: 0.5mm;
+    --std_padding: 0.5em;
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
     --body_w: 1300px;
