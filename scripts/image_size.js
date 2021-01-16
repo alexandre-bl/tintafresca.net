@@ -12,5 +12,5 @@ function image_size(img, w, h) {
 var imgs = document.getElementsByClassName("post_img");
 
 for (var i = 0; i < imgs.length; i++) {
-    image_size(imgs[i], "60%", "70%");
+    image_size(imgs[i], "60%", "90%");
 }
