@@ -194,7 +194,7 @@ html {
 
 .post {
     background-color: var(--background_2);
-    padding: var(--std_padding), var(--std_padding), var(--std_padding), 0;
+    padding: var(--std_padding);
     font-size: 1em;
     overflow: hidden;
     display: inline-block;
@@ -253,7 +253,7 @@ b {
 .post_img {
     display: block !important;
     float: left;
-    padding: var(--std_padding);
+    padding: var(--std_padding), var(--std_padding), var(--std_padding), 0;
 }
 
 .add {
