@@ -43,9 +43,6 @@ if( is_singular() ) {
         <!-- Makes it so some CSS features I need that aren't on IE work on IE -->
         <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
 
-        <!-- Image Sizing -->
-        <script src="<?php echo get_template_directory_uri()."/scripts/image_size.js"; ?>"></script>
-
     </head>
 
     <body> <?php
@@ -55,7 +52,12 @@ if( is_singular() ) {
         require_once "site_front/left_bar.php";
         require_once "site_front/right_bar.php";
         require_once "site_front/center.php";
-            
-    ?> </body>
+
+    ?>
+    
+    <!-- Image Sizing -->
+    <script src="<?php echo get_template_directory_uri()."/scripts/image_size.js"; ?>"></script>
+
+    </body>
 
 </html>
