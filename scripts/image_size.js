@@ -3,8 +3,10 @@ function image_size(img, w, h) {
     let height = img.offsetHeight;
 
     if (height >= width) {
+        img.style.height = "100%";
         img.style.maxHeight = w;
     } else {
+        img.style.width = "100%";
         img.style.maxWidth = h;
     }
 }
