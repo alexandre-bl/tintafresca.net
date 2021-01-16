@@ -10,7 +10,7 @@ function image_size(img, wp, hp, tp, m) {
         img.style.height = "100%";
         img.style.maxHeight = (p_height - top - m) * hp;
     } else {
-        img.style.width = "50%";
+        img.style.width = "100%";
     }
 }
 
