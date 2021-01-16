@@ -8,7 +8,8 @@ function image_size(img, wp, hp, tp, m) {
 
     if (height >= width) {
         img.style.height = "100%";
-        img.style.maxHeight = (p_height - top - m) * hp + "px";
+        img.style.maxHeight =
+            (((p_height - top - m) * hp) / p_height) * 100 + "%";
     } else {
         img.style.width = "100%";
         img.style.maxWidth = (((p_width - top - m) * wp) / p_width) * 100 + "%";
