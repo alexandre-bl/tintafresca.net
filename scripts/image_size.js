@@ -6,8 +6,6 @@ function image_size(img, wp, hp, tp, m) {
     let p_height = parent.offsetHeight;
     let top = parent.offsetTop;
 
-    console.log(width, height);
-
     if (height >= width) {
         img.style.height = p_height - top - m;
     } else {
@@ -16,6 +14,8 @@ function image_size(img, wp, hp, tp, m) {
 }
 
 let imgs = document.getElementsByClassName("post_img");
+
+console.log(imgs);
 
 for (i = 0; i < imgs.length; i++) {
     image_size(imgs[i], 0.6, 0.6, 0.5, 5);
