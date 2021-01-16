@@ -90,13 +90,12 @@ html {
 }
 
 #left_bar ul {
-    list-style-type: circle;
     padding: 0;
     margin: 0;
 }
 
 #left_bar li {
-    list-style-type: none;
+    list-style-type: circle;
     width: calc(100% - var(--std_margin) * 2);
     padding: var(--std_margin);
     text-align: center;
