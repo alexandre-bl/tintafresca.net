@@ -1,2 +1,2 @@
 ./meta/test.sh ; \
-ssh root@alexandrebl.com "cd /var/www/tintafresca.net/wp-content/themes/tintafresca.net && git pull"
+ssh alex@alexandrebl.com "cd /var/www/tintafresca/wp-content/themes/tintafresca_wp_theme && git pull"
