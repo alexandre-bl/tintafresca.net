@@ -91,6 +91,7 @@ html {
 
 #left_bar ul {
     width: 80%;
+    position: absolute;
     top: 0;
     right: 0;
     padding: 0;
