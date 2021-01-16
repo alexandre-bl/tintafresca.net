@@ -285,6 +285,8 @@ b {
     margin: 0;
     padding: 0;
     float: none;
+    width: 100%;
+    max-width: 100%;
 }
 
 #sub-header {
