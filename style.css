@@ -90,12 +90,15 @@ html {
 }
 
 #left_bar ul {
+    width: 80%;
+    top: 0;
+    right: 0;
     padding: 0;
     margin: 0;
 }
 
 #left_bar li {
-    width: calc(80% - var(--std_margin) * 2);
+    width: calc(100% - var(--std_margin) * 2);
     padding: var(--std_margin);
     text-align: center;
 }
