@@ -138,7 +138,7 @@ html {
     left: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(var(--main_h) - var(--std_padding) * 3);
-    border: var(--std_padding) solid black;
+    border-bottom: var(--std_padding) solid var(--background_2);
     font-size: 1em;
 }
 
