@@ -12,7 +12,7 @@
 */
 
 :root {
-    --border_w: 150px; 
+    --border_w: 150px;
     --std_margin: 5px;
     --std_padding: 2.5mm;
     --background_2: #f3f3f3;
@@ -119,12 +119,6 @@ html {
     height: auto !important;
 }
 
-#center.singular img,
-#center.singular .wp-caption {
-    max-width: 100%;
-    height: auto;
-}
-
 #center.singular .post_title {
     margin-top: 0;
 }
@@ -144,13 +138,6 @@ html {
 
 #st_post h1 {
     font-size: 1.25em;
-}
-
-#st_post img {
-    height: auto;
-    max-height: none;
-    width: 100%;
-    max-width: calc(60% - var(--std_padding) * 2 - 2em);
 }
 
 #nd_post {
@@ -267,8 +254,6 @@ b {
     display: block !important;
     float: left;
     padding: var(--std_padding);
-    height: 100%;
-    max-height: calc(80% - var(--std_padding) * 2);
 }
 
 .add {
@@ -276,20 +261,8 @@ b {
 }
 
 #header .add img {
-    height: 100%;
-    max-width: 100%;
     display: block;
     margin: auto;
-}
-
-#left_bar .add img {
-    width: 100%;
-    max-height: 100%;
-}
-
-#right_bar .add img {
-    width: 100%;
-    max-height: 100%;
 }
 
 #opinion {
@@ -311,9 +284,6 @@ b {
 #opinion .post_img {
     margin: 0;
     padding: 0;
-    height: auto;
-    width: 100%;
-    max-width: 100%;
     float: none;
 }
 
