@@ -169,7 +169,7 @@ html {
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     border-bottom: var(--std_padding) solid var(--background_2);
     height: calc(
-        var(--main_h) / 2 - var(var(--std_margin) - var(--std_padding) * 3)
+        var(--main_h) / 2 - var(--std_margin) - var(--std_padding) * 3
     );
 }
 
