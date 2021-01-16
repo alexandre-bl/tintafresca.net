@@ -101,7 +101,7 @@ html {
 #left_bar li {
     width: calc(100% - var(--std_margin) * 2);
     padding: var(--std_margin);
-    text-align: center;
+    text-align: left;
 }
 
 #center {
