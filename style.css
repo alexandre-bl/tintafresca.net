@@ -190,6 +190,7 @@ html {
 
 #sec_posts .post {
     height: calc(var(--main_h) / 2 - var(--std_margin) - var(--std_padding));
+    border-bottom: var(--std_padding) solid var(--background_2);
     width: 100%;
 }
 
