@@ -3,9 +3,9 @@ function image_size(img, w, h) {
     let height = img.offsetHeight;
 
     if (height >= width) {
-        img.style.height = w;
+        img.style.maxHeight = w;
     } else {
-        img.style.width = h;
+        img.style.maxWidth = h;
     }
 }
 
