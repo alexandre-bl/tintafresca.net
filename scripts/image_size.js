@@ -6,6 +6,8 @@ function image_size(img, wp, hp, tp, m) {
     let p_height = parent.offsetHeight;
     let top = parent.offsetTop;
 
+    console.log(width, height);
+
     if (height >= width) {
         img.style.height = p_height - top - m;
     } else {
