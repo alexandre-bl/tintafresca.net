@@ -16,5 +16,6 @@ function image_size(img, wp, hp, tp, m) {
 var imgs = document.getElementsByClassName("post_img");
 
 for (var i = 0; i < imgs.length; i++) {
+    console.log("test");
     image_size(imgs[i], 0.6, 0.6, 0.5, 5);
 }
