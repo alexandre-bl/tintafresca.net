@@ -13,7 +13,7 @@ function image_size(img, wp, hp, tp, m) {
     }
 }
 
-let imgs = getElementsByClass("post_img");
+let imgs = getElementsByClassName("post_img");
 
 for (i = 0; i < imgs.length; i++) {
     image_size(imgs[i], 0.6, 0.6, 0.5, 5);
