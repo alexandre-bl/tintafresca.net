@@ -13,4 +13,4 @@ function image_size(img, wp, hp, tp, m) {
     }
 }
 
-let imgs = getElementById("");
+let imgs = getElementById("_");
