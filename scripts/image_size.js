@@ -7,8 +7,10 @@ function image_size(img, wp, hp, tp, m) {
     let top = parent.offsetTop;
 
     if (height >= width) {
-        img.style.height = (p_height - top - m) * hp;
+        img.style.height = p_height - top - m;
     } else {
-        img.style.width = (p_width - top - m) * wp;
+        img.style.width = p_width - top - m;
     }
 }
+
+let imgs = getElementById("");
