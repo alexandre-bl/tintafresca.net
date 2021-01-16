@@ -265,7 +265,8 @@ b {
 .post_img {
     display: block !important;
     float: left;
-    padding: var(--std_padding);
+    padding-right: var(--std_padding);
+    padding-bottom: var(--std_padding);
     height: 100%;
     max-height: calc(80% - var(--std_padding) * 2);
 }
