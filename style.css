@@ -137,8 +137,7 @@ html {
     top: 0;
     left: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-    height: calc(var(--main_h) - var(--std_padding) * 3);
-    border-bottom: var(--std_padding) solid var(--background_2);
+    height: calc(var(--main_h) - var(--std_padding) * 2);
     font-size: 1em;
 }
 
@@ -158,8 +157,7 @@ html {
     top: 0;
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-    border-bottom: var(--std_padding) solid var(--background_2);
-    height: calc(var(--main_h) / 2 - var(--std_padding) * 3);
+    height: calc(var(--main_h) / 2 - var(--std_padding) * 2);
 }
 
 #trd_post {
@@ -167,9 +165,8 @@ html {
     top: calc(var(--main_h) / 2 + var(--std_margin));
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-    border-bottom: var(--std_padding) solid var(--background_2);
     height: calc(
-        var(--main_h) / 2 - var(--std_margin) - var(--std_padding) * 3
+        var(--main_h) / 2 - var(--std_margin) - var(--std_padding) * 2
     );
 }
 
@@ -189,8 +186,7 @@ html {
 }
 
 #sec_posts .post {
-    height: calc(var(--main_h) / 2 - var(--std_margin) - var(--std_padding));
-    border-bottom: var(--std_padding) solid var(--background_2);
+    height: calc(var(--main_h) / 2 - var(--std_margin));
     width: 100%;
 }
 
@@ -211,7 +207,6 @@ html {
 .post {
     background-color: var(--background_2);
     padding: var(--std_padding);
-    padding-bottom: 0;
     font-size: 1em;
     display: inline-block;
 }
