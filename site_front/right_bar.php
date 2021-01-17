@@ -21,7 +21,7 @@ if( !empty( $query[2] ) ) { $add["img"]  = $query[2]->img;
     
     <a class="add" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
 
-    <?php if( !is_singular() or !empty($_GET["category"]) ) { ?>
+    <?php if( !is_singular() and !empty($_GET["category"]) ) { ?>
 
         <div id="opinion"> <?php
 
