@@ -16,7 +16,7 @@ $query = $wpdb->get_results(" SELECT * FROM $table_name ");
 $add = array( "img" => "", "url" => "" );
 
 if( !empty( $query[0] ) ) { $add["img"]  = str_replace( "http://tintafresca.net", "https://tintafresca.net", $query[0]->img );
-                            $add["link"] = str_replace( "http://tintafresca.net", "https://tintafresca.net", $query[0]->link); }
+                            $add["url"] = str_replace( "http://tintafresca.net", "https://tintafresca.net", $query[0]->link); }
 
 ?>
 
