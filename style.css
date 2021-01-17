@@ -216,7 +216,7 @@ html {
 
 .post_desc {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
