@@ -141,6 +141,10 @@ html {
     font-size: 1em;
 }
 
+#st_post .post_desc {
+    -webkit-line-clamp: 7;
+}
+
 #st_post h1 {
     font-size: 1.25em;
 }
