@@ -141,7 +141,7 @@ html {
     font-size: 1em;
 }
 
-#center.not_sigular #st_post .post_desc {
+#center.not_singular #st_post .post_desc {
     -webkit-line-clamp: 17;
 }
 
@@ -219,7 +219,7 @@ html {
     overflow: hidden;
 }
 
-#center.not_sigular .post .post_desc {
+#center.not_singular .post .post_desc {
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
@@ -230,7 +230,7 @@ html {
     display: none;
 }
 
-#center.not_sigular .post_desc img {
+#center.not_singular .post_desc img {
     width: 0 !important;
     height: 0 !important;
 }
@@ -248,17 +248,17 @@ html {
     display: none;
 }
 
-#center.not_sigular .post_desc strong,
+#center.not_singular .post_desc strong,
 b {
     font-weight: normal !important;
 }
 
-#center.not_sigular .post_desc p {
+#center.not_singular .post_desc p {
     margin: 0;
     line-break: unset;
 }
 
-#center.not_sigular .post_desc {
+#center.not_singular .post_desc {
     font-style: normal !important;
     white-space: unset;
 }
