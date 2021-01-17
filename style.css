@@ -216,6 +216,7 @@ html {
     padding: var(--std_padding);
     font-size: 1em;
     display: inline-block;
+    overflow: hidden;
 }
 
 .post_desc {
