@@ -142,7 +142,7 @@ html {
 }
 
 #st_post .post_desc {
-    -webkit-line-clamp: 20;
+    -webkit-line-clamp: 17;
 }
 
 #st_post h1 {
