@@ -40,9 +40,6 @@ if( is_singular() ) {
         gtag('config', 'G-QNCE36250T');
         </script>
 
-        <!-- JQuery -->
-        <script src="<?php echo get_template_directory_uri()."/jquery.js"; ?>"></script>
-
         <!-- Makes it so some CSS features I need that aren't on IE work on IE -->
         <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
 
@@ -60,10 +57,6 @@ if( is_singular() ) {
         require_once "site_front/center.php";
             
     ?>
-    
-    <script>
-        $(".post").truncateToHeight($(".post").text(), 105);
-    </script>
 
     </body>
 
