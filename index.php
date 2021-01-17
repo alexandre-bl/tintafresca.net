@@ -61,7 +61,9 @@ if( is_singular() ) {
             
     ?>
     
-    <script> $(".post").truncateToHeight($(".post").text(), 105); </script>
+    <script>
+        $("#my_div").truncateToHeight($("#my_div").text(), 105);
+    </script>
 
     </body>
 
