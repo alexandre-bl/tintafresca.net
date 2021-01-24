@@ -292,6 +292,10 @@ b {
     background-color: var(--background_3);
 }
 
+.add.not_is {
+    display: none;
+}
+
 #header .add img {
     height: 100%;
     max-width: 100%;

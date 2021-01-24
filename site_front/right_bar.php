@@ -15,11 +15,13 @@ $add = array( "img" => "", "url" => "" );
 if( !empty( $query[2] ) ) { $add["img"]  = $query[2]->img;
                             $add["link"] = $query[2]->link; }
 
+$add_not = empty( $query[2]->link );
+
 ?>
 
 <div id="right_bar">
     
-    <a class="add" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
+    <a class="add <?php if( $add_not ) { echo "not_is"; } ?>" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
 
     <?php if( !is_singular() and empty($_GET["category"]) ) { ?>
 
