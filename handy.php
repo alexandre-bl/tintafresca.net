@@ -4,7 +4,15 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
     if( !empty($post->ID) ) {
 
+        $pre_ttl = get_post_meta( $post->ID, "Pre-Title", TRUE );
+
 		$o = "";
+
+        if( !empty($pre_ttl) ) {
+
+            $o .= "<h3 class='post_pretitle'>$post->pre_ttl</h3>";
+
+        }
 
         $o .= "<h1 class='post_title'><a href='". get_post_permalink( $post->ID ) ."'>$post->post_title</a></h1>";
         
