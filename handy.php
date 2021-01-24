@@ -10,7 +10,7 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
         if( !empty($pre_ttl) ) {
 
-            $o .= "<h3 class='post_pretitle'>$post->pre_ttl</h3>";
+            $o .= "<h3 class='post_pretitle'>$pre_ttl</h3>";
 
         }
 
