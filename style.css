@@ -271,6 +271,7 @@ b {
 .post_pretitle {
     font-size: 0.75em;
     margin: 0;
+    padding-bottom: var(--std_padding);
 }
 
 .post_title a {
