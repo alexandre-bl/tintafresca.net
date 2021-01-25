@@ -142,7 +142,7 @@ html {
 }
 
 #center.not_singular #st_post .post_desc {
-    -webkit-line-clamp: 16;
+    -webkit-line-clamp: 17;
 }
 
 #st_post h1 {
@@ -221,7 +221,7 @@ html {
 
 #center.not_singular .post .post_desc {
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
