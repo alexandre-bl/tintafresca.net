@@ -36,7 +36,7 @@
 
 				for( $i = 3; $i < count($posts); $i += 1 ) {
 				
-					if( !in_array( $posts[$i], $opinion ) ) {
+					if( !in_array( $posts[$i], get_posts( array( 'numberposts' => -1, "category" =>  get_cat_ID("Opinião") ) ) ) ) {
 				
 						$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
 				
