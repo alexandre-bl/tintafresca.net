@@ -215,8 +215,8 @@ html {
     overflow: hidden;
 }
 
-#center.not_singular .post .post_desc {
-    max-height: 100%;
+#center.not_singular .post .post_desc::after {
+    content: "...";
 }
 
 .post img {
