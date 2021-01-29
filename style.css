@@ -162,7 +162,7 @@ html {
 
 #trd_post {
     position: absolute;
-    top: calc(var(--main_h) / 2 + var(--std_margin));
+    top: calc(var(--main_h) + var(--std_margin));
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(
