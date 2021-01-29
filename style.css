@@ -172,7 +172,7 @@ html {
 
 #sec_posts {
     position: absolute;
-    top: calc(var(--main_h) + var(--std_margin));
+    top: calc(var(--main_h) + var(--std_margin) * 2);
     left: 0;
     margin-top: var(--std_margin);
     width: 100%;
