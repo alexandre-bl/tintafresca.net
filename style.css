@@ -215,8 +215,7 @@ html {
     overflow: hidden;
 }
 
-#center.not_singular .post .post_desc {
-    height: 100px;
+.post .post_desc {
     overflow: hidden;
     text-overflow: ellipsis;
     height: 100%;
