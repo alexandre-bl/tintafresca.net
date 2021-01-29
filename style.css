@@ -219,6 +219,7 @@ html {
     height: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 100%;
 }
 
 .post img {
