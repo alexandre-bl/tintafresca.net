@@ -14,12 +14,12 @@
 :root {
     --border_w: 150px;
     --std_margin: 4px;
-    --std_padding: 0.5em;
+    --std_padding: 8px;
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
     --body_w: 1300px;
     --main_h: 400px;
-    --subh_h: 1.5em;
+    --subh_h: 24px;
 }
 
 body,
@@ -129,7 +129,7 @@ html {
 }
 
 #center.singular h1 {
-    font-size: 2em;
+    font-size: 32px;
 }
 
 #st_post {
@@ -138,18 +138,18 @@ html {
     left: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(var(--main_h) - var(--std_padding) * 2);
-    font-size: 1em;
+    font-size: 16px;
 }
 
 #st_post h1 {
-    font-size: 1.25em;
+    font-size: 20px;
 }
 
 #st_post img {
     height: auto;
     max-height: none;
     width: 100%;
-    max-width: calc(60% - var(--std_padding) * 2 - 2em);
+    max-width: calc(60% - var(--std_padding) * 2 - 20px);
 }
 
 #nd_post {
@@ -211,7 +211,7 @@ html {
     background-color: var(--background_2);
     padding: var(--std_padding);
     padding-bottom: 0;
-    font-size: 1em;
+    font-size: 16px;
     display: inline-block;
     overflow: hidden;
     border-bottom: var(--std_padding) solid var(--background_2);
@@ -261,12 +261,12 @@ b {
 }
 
 .post_title {
-    font-size: 1em;
+    font-size: 16px;
     margin-top: 0;
 }
 
 .post_pretitle {
-    font-size: 0.75em;
+    font-size: 12px;
     margin: 0;
     padding-bottom: var(--std_padding);
 }
@@ -378,11 +378,11 @@ b {
 /* I don't even know anymore: */
 img.alignright {
     float: right;
-    margin: 0 0 1em 1em;
+    margin: 0 0 16px 16px;
 }
 img.alignleft {
     float: left;
-    margin: 0 1em 1em 0;
+    margin: 0 16px 16px 0;
 }
 img.aligncenter {
     display: block;
@@ -402,8 +402,8 @@ img.aligncenter {
 }
 .wp-caption-text {
     text-align: center;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    padding-top: 3.2px;
+    padding-bottom: 3.2px;
     margin: 0;
     font-weight: bold;
 }
