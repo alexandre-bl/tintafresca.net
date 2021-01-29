@@ -217,8 +217,8 @@ html {
 
 #center.not_singular .post .post_desc {
     height: 100px;
-    text-overflow: hidden;
-    overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .post img {
