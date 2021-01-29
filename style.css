@@ -141,10 +141,6 @@ html {
     font-size: 1em;
 }
 
-#center.not_singular #st_post .post_desc {
-    -webkit-line-clamp: 17;
-}
-
 #st_post h1 {
     font-size: 1.25em;
 }
@@ -220,9 +216,8 @@ html {
 }
 
 #center.not_singular .post .post_desc {
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
 }
 

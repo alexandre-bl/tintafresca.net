@@ -1,20 +1,20 @@
 <?php
 
-$title = get_bloginfo( 'name' );
-$desc = get_bloginfo( 'description' );
-$meta_desc = get_post_meta( get_post()->ID, "Description", TRUE );
+    $title = get_bloginfo( 'name' );
+    $desc = get_bloginfo( 'description' );
+    $meta_desc = get_post_meta( get_post()->ID, "Description", TRUE );
 
-if( is_singular() ) {
+    if( is_singular() ) {
 
-    $title .= " - " . get_the_title();
+        $title .= " - " . get_the_title();
 
-    if( !empty( $meta_desc ) ) {
+        if( !empty( $meta_desc ) ) {
 
-        $desc = $meta_desc;
+            $desc = $meta_desc;
+
+        }
 
     }
-
-}
 
 ?>
 
@@ -46,17 +46,19 @@ if( is_singular() ) {
 
     </head>
 
-    <body> <?php
+    <body> 
+    
+        <?php
             
-        require_once "site_front/header.php"; 
-        require_once "site_front/sub_header.php";
-        require_once "site_front/left_bar.php";
-        require_once "site_front/right_bar.php";
-        require_once "site_front/center.php";
+            require_once "site_front/header.php"; 
+            require_once "site_front/sub_header.php";
+            require_once "site_front/left_bar.php";
+            require_once "site_front/right_bar.php";
+            require_once "site_front/center.php";
             
-    ?>
+        ?>
 
-    <script src="<?php echo get_template_directory_uri()."/style.js"; ?>"></script>
+        <script src="<?php echo get_template_directory_uri()."/style.js"; ?>"></script>
 
     </body>
 
