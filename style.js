@@ -1,30 +1,38 @@
-jQuery.fn.ellipsis = function (text, maxHeight) {
-    var element = $(this);
-    var characters = text.length;
-    var step = text.length / 2;
-    var newText = text;
-    while (step > 0) {
-        element.html(newText);
-        if (element.outerHeight() <= maxHeight) {
-            if (text.length == newText.length) {
-                step = 0;
-            } else {
-                characters += step;
-                newText = text.substring(0, characters);
-            }
-        } else {
-            characters -= step;
-            newText = newText.substring(0, characters);
-        }
-        step = parseInt(step / 2);
-    }
-    if (text.length > newText.length) {
-        element.html(newText + "...");
-        while (element.outerHeight() > maxHeight && newText.length >= 1) {
-            newText = newText.substring(0, newText.length - 1);
-            element.html(newText + "...");
-        }
-    }
-};
+(function ($) {
+    $.fn.ellipsis = function () {
+        return this.each(function () {
+            var el = $(this);
 
-$(".post_desc").ellipsis($(".post_desc").text(), 1000);
+            if (el.css("overflow") == "hidden") {
+                var text = el.html();
+                var multiline = el.hasClass("multiline");
+                var t = $(this.cloneNode(true))
+                    .hide()
+                    .css("position", "absolute")
+                    .css("overflow", "visible")
+                    .width(multiline ? el.width() : "auto")
+                    .height(multiline ? "auto" : el.height());
+                el.after(t);
+
+                function height() {
+                    return t.height() > el.height();
+                }
+                function width() {
+                    return t.width() > el.width();
+                }
+
+                var func = multiline ? height : width;
+
+                while (text.length > 0 && func()) {
+                    text = text.substr(0, text.length - 1);
+                    t.html(text + "...");
+                }
+
+                el.html(t.html());
+                t.remove();
+            }
+        });
+    };
+})(jQuery);
+
+$(".post_desc").ellipsis();
