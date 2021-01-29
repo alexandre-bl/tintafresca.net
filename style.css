@@ -217,6 +217,9 @@ html {
 
 #center.not_singular .post .post_desc::after {
     content: "...";
+    position: absolute;
+    right: -12px;
+    bottom: 4px;
 }
 
 .post img {
