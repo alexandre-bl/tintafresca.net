@@ -213,6 +213,7 @@ html {
     font-size: 1em;
     display: inline-block;
     overflow: hidden;
+    border-bottom: var(--std_padding) solid var(--background_2);
 }
 
 .post .post_desc {
