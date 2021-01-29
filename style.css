@@ -211,7 +211,7 @@ html {
     background-color: var(--background_2);
     padding: var(--std_padding);
     padding-bottom: 0;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     overflow: hidden;
     border-bottom: var(--std_padding) solid var(--background_2);
