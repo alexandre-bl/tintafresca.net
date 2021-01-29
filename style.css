@@ -319,6 +319,7 @@ b {
     margin-left: var(--std_margin);
     height: auto;
     padding: calc(var(--std_margin) / 2);
+    border: 0;
 }
 
 #opinion .post_desc {
