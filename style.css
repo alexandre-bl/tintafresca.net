@@ -216,9 +216,7 @@ html {
 }
 
 #center.not_singular .post .post_desc {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    max-height: 100%;
 }
 
 .post img {
