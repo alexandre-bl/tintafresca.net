@@ -27,4 +27,4 @@ jQuery.fn.ellipsis = function (text, maxHeight) {
     }
 };
 
-$(".post_desc").truncateToHeight($(".post_desc").text(), 105);
+$(".post_desc").ellipsis($(".post_desc").text(), 105);
