@@ -56,6 +56,8 @@ if( is_singular() ) {
             
     ?>
 
+    <script src="<?php echo get_template_directory_uri()."/style.js"; ?>"></script>
+
     </body>
 
 </html>
