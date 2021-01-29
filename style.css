@@ -190,7 +190,7 @@ html {
         var(--main_h) / 2 - var(--std_margin) - var(--std_padding) * 2
     );
     width: 100%;
-    margin-bottom: var(--std_margin);
+    margin-bottom: var(--std_margin) / 2;
 }
 
 #right_posts {
