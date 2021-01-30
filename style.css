@@ -271,6 +271,7 @@ b {
     font-size: 12px;
     margin: 0;
     padding-bottom: var(--std_padding);
+    flex-direction: column;
 }
 
 .post_title a {
