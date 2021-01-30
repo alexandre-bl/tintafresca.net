@@ -218,14 +218,6 @@ html {
     border-bottom: var(--std_padding) solid var(--background_2);
 }
 
-.post .post_desc {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    column-width: 400px;
-    -webkit-column-width: 400px;
-    height: 70%;
-}
-
 .post img {
     display: none;
 }
