@@ -21,8 +21,10 @@ for( var i = 0; i < posts.length; i++ ) {
 
 for( var l = 0; l < descs.length; l++ ) {
 
-    var top = Number( descs[l].offsetTop );
-    var height = Number( window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height") );
+    var top = descs[l].offsetTop;
+    var height = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height");
+    top = top.slice( 0,-3 );
+    height = height.slice( 0, -3 );
 
     console.log(height);
     descs[l].style.height = height - top;
