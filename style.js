@@ -21,6 +21,8 @@ for( var i = posts; i < posts.length; i++ ) {
 
 for( var l; l < descs.length; l++ ) {
 
+    console.log("test");
+
     var desc = descs[l];
     var parent = desc.parent;
 
