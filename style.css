@@ -18,7 +18,7 @@
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
     --body_w: 1300px;
-    --main_h: 400px;
+    --main_h: calc( ( var(--body_w) - var(--border_w)*2 - var(--std_margin)*2 )/2 );
     --subh_h: 24px;
 }
 
