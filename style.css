@@ -219,8 +219,8 @@ html {
 }
 
 .post .post_desc {
-    column-width: 400px;
-    -webkit-column-width: 400px;
+    column-width: 100%;
+    -webkit-column-width: 100%;
 }
 
 .post img {
