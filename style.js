@@ -32,6 +32,6 @@ for( var l = 0; l < descs.length; l++ ) {
     y = y.toString().replace("px","");
     height = height.toString().replace("px","");
 
-    descs[l].style.height = height - y + 8*2 + "px"; 
+    descs[l].style.height = height - y + 8 + "px"; 
 
 }
