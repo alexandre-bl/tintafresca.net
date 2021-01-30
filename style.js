@@ -3,7 +3,7 @@ var descs = [];
 
 for( var i = 0; i < posts.length; i++ ) {
 
-    if( posts[i].parentElement.id = "opinion" ) {
+    if( posts[i].parentElement.id != "opinion" ) {
 
         var children = posts[i].children;
 
