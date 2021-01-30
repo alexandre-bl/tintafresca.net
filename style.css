@@ -323,7 +323,7 @@ b {
     border: 0;
 }
 
-.post_caption {
+.post_author {
     text-align: center;
     margin: var(--std_margin) !important;
 }
