@@ -219,8 +219,9 @@ html {
 }
 
 .post .post_desc {
-    column-width: 100%;
-    -webkit-column-width: 100%;
+    --column: 400px;
+    column-width: var(--column);
+    -webkit-column-width: var(--column);
 }
 
 .post img {
