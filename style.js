@@ -9,7 +9,8 @@ for( var i = 0; i < posts.length; i++ ) {
 
         var child = children[j];
 
-        if( child.classList.contains("post_desc") ) {
+        if( child.classList.contains("post_desc") ||
+            child.classList.contains("post_img")  ){
 
             descs.push( child );
 
