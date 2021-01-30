@@ -22,7 +22,7 @@ for( var i = 0; i < posts.length; i++ ) {
 for( var l = 0; l < descs.length; l++ ) {
 
     var desc = descs[l];
-    var parent = desc.parent;
+    var parent = desc.parentElement;
 
     desc.style.height = parent.style.height - desc.offsetTop;
 
