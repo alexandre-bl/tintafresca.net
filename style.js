@@ -3,10 +3,14 @@ var descs = [];
 
 for( var i = posts; i < posts.length; i++ ) {
 
+    console.log(i);
+
     var children = posts[i].children;
 
     for( var j = children; j < posts.children; j++ ) {
 
+        console.log(j);
+        
         var child = children[j];
 
         if( child.classList.contains("post_desc") ) {
@@ -21,7 +25,7 @@ for( var i = posts; i < posts.length; i++ ) {
 
 for( var l; l < descs.length; l++ ) {
 
-    console.log("test");
+    console.log(l);
 
     var desc = descs[l];
     var parent = desc.parent;
