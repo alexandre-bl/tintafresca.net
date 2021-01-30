@@ -1,17 +1,11 @@
 var posts = document.getElementsByClassName("post");
 var descs = [];
 
-console.log(posts.length);
-
-for( var i = posts; i < posts.length; i++ ) {
-
-    console.log(i);
+for( var i = 0; i < posts.length; i++ ) {
 
     var children = posts[i].children;
 
-    for( var j = children; j < posts.children; j++ ) {
-
-        console.log(j);
+    for( var j = 0; j < children.length; j++ ) {
 
         var child = children[j];
 
@@ -25,9 +19,7 @@ for( var i = posts; i < posts.length; i++ ) {
 
 }
 
-for( var l; l < descs.length; l++ ) {
-
-    console.log(l);
+for( var l = 0; l < descs.length; l++ ) {
 
     var desc = descs[l];
     var parent = desc.parent;
