@@ -118,12 +118,6 @@ html {
     height: auto !important;
 }
 
-#center.singular img,
-#center.singular .wp-caption {
-    max-width: 100%;
-    height: auto;
-}
-
 #center.singular .post_title {
     margin-top: 0;
 }
@@ -143,13 +137,6 @@ html {
 
 #st_post h1 {
     font-size: 20px;
-}
-
-#st_post img {
-    height: auto;
-    max-height: none;
-    width: 100%;
-    max-width: calc(60% - var(--std_padding) * 2 - 20px);
 }
 
 #nd_post {
@@ -280,8 +267,6 @@ b {
     float: left;
     padding-right: var(--std_padding);
     padding-bottom: var(--std_padding);
-    height: 100%;
-    max-height: calc(80% - var(--std_padding) * 2);
 }
 
 .add {

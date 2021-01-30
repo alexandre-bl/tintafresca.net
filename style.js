@@ -3,16 +3,20 @@ var descs = [];
 
 for( var i = 0; i < posts.length; i++ ) {
 
-    var children = posts[i].children;
+    if( posts[i].parentElement.id = "opinion" ) {
 
-    for( var j = 0; j < children.length; j++ ) {
+        var children = posts[i].children;
 
-        var child = children[j];
+        for( var j = 0; j < children.length; j++ ) {
 
-        if( child.classList.contains("post_desc") ||
-            child.classList.contains("post_img")  ){
+            var child = children[j];
 
-            descs.push( child );
+            if( child.classList.contains("post_desc") ||
+                child.classList.contains("post_img")  ){
+
+                descs.push( child );
+
+            }
 
         }
 
@@ -26,7 +30,7 @@ for( var l = 0; l < descs.length; l++ ) {
     var height = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height");
     y = y.toString().replace("px","");
     height = height.toString().replace("px","");
-    
+
     descs[l].style.height = height - y + 8 + "px"; 
 
 }
