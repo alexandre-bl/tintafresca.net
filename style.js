@@ -21,12 +21,12 @@ for( var i = 0; i < posts.length; i++ ) {
 
 for( var l = 0; l < descs.length; l++ ) {
 
-    var top = descs[l].offsetTop;
+    var y = descs[l].offsetTop;
     var height = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height");
-    top = top.toString().replace("px","");
+    y = y.toString().replace("px","");
     height = height.toString().replace("px","");
 
-    console.log(top);
-    descs[l].style.height = height - top;
+    console.log(y);
+    descs[l].style.height = height - y;
 
 }
