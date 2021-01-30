@@ -44,20 +44,20 @@ html {
     left: 0;
 }
 
-#logo {
-    height: var(--border_w);
-    width: var(--border_w);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 #header .add {
     height: var(--border_w);
     width: calc(100% - var(--border_w) * 2 - var(--std_margin));
     position: absolute;
     top: 0;
     right: var(--border_w);
+}
+
+#logo {
+    height: var(--border_w);
+    width: var(--border_w);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #left_bar .add {
@@ -216,13 +216,11 @@ html {
     display: inline-block;
     overflow: hidden;
     border-bottom: var(--std_padding) solid var(--background_2);
-    display: flex;
 }
 
 .post .post_desc {
     column-width: 400px;
     -webkit-column-width: 400px;
-    flex-grow: 100;
 }
 
 .post img {
@@ -271,7 +269,6 @@ b {
     font-size: 12px;
     margin: 0;
     padding-bottom: var(--std_padding);
-    flex-direction: column;
 }
 
 .post_title a {
