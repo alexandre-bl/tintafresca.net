@@ -211,9 +211,9 @@ html {
 
 .post .post_desc {
     --column: 100%;
-    column-count: var(--column);
-    -webkit-column-count: var(--column);
-    -moz-column-count: var(--column);
+    column-width: var(--column);
+    -webkit-column-width: var(--column);
+    -moz-column-width: var(--column);
 }
 
 .post img {
