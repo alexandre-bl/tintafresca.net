@@ -18,7 +18,12 @@
     --background_2: #f3f3f3;
     --background_3: #fcfcfc;
     --body_w: 1300px;
-    --main_h: calc( ( var(--body_w) - var(--border_w)*2 - var(--std_padding) - var(--std_margin)*3 )/2 );
+    --main_h: calc(
+        (
+                var(--body_w) - var(--border_w) * 2 - var(--std_padding) -
+                    var(--std_margin) * 3
+            ) / 2
+    );
     --subh_h: 24px;
 }
 
@@ -144,15 +149,19 @@ html {
     top: 0;
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-    height: calc(var(--main_h) / 2 - var(--std_margin)/2 - var(--std_padding) * 2);
+    height: calc(
+        var(--main_h) / 2 - var(--std_margin) / 2 - var(--std_padding) * 2
+    );
 }
 
 #trd_post {
     position: absolute;
-    top: calc(var(--main_h) / 2 + var(--std_margin)/2);
+    top: calc(var(--main_h) / 2 + var(--std_margin) / 2);
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-    height: calc(var(--main_h) / 2 - var(--std_margin)/2 - var(--std_padding) * 2);
+    height: calc(
+        var(--main_h) / 2 - var(--std_margin) / 2 - var(--std_padding) * 2
+    );
 }
 
 #sec_posts {
@@ -172,7 +181,7 @@ html {
 
 #sec_posts .post {
     height: calc(
-        var(--main_h) / 2 - var(--std_margin)/2 - var(--std_padding) * 2
+        var(--main_h) / 2 - var(--std_margin) / 2 - var(--std_padding) * 2
     );
     width: 100%;
     margin-bottom: var(--std_margin) / 2;
