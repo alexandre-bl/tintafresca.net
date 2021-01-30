@@ -223,7 +223,7 @@ html {
     text-overflow: ellipsis;
     column-width: 150px;
     -webkit-column-width: 150px;
-    height: 60%;
+    height: 70%;
 }
 
 .post img {
