@@ -23,6 +23,8 @@ for( var l = 0; l < descs.length; l++ ) {
 
     var top = descs[l].offsetTop;
     var height = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height");
+    top.replace("px","");
+    height.replace("px","");
 
     console.log(height);
     descs[l].style.height = height - top;
