@@ -222,7 +222,7 @@ html {
 .post .post_desc {
     column-width: 400px;
     -webkit-column-width: 400px;
-    height: 70%;
+    flex-grow: 100;
 }
 
 .post img {
