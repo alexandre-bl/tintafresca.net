@@ -221,6 +221,8 @@ html {
 .post .post_desc {
     overflow: hidden;
     text-overflow: ellipsis;
+    column-width: 150px;
+    -webkit-column-width: 150px;
     height: 100%;
 }
 
