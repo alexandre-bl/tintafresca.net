@@ -1,7 +1,7 @@
 /*
     Theme Name: TintaFresca
     Author: Alexandre B. L.
-    Author URI: alexandrebl.com
+    Author URI: https://alexandrebl.com
     Description: O tema usado pelo jornal tintafresca
     Version: [ROLLING RELEASE]
     License: M.I.T. License
@@ -210,9 +210,9 @@ html {
 }
 
 .post .post_desc {
-    --column: 999999px;
-    column-width: var(--column);
-    -webkit-column-width: var(--column);
+    --column: 1;
+    column-count: var(--column);
+    -webkit-column-count: var(--column);
 }
 
 .post img {
