@@ -1,6 +1,8 @@
 var posts = document.getElementsByClassName("post");
 var descs = [];
 
+console.log(posts.length);
+
 for( var i = posts; i < posts.length; i++ ) {
 
     console.log(i);
@@ -10,7 +12,7 @@ for( var i = posts; i < posts.length; i++ ) {
     for( var j = children; j < posts.children; j++ ) {
 
         console.log(j);
-        
+
         var child = children[j];
 
         if( child.classList.contains("post_desc") ) {
