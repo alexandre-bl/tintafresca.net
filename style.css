@@ -210,7 +210,7 @@ html {
 }
 
 .post .post_desc {
-    --column: 400px;
+    --column: 999999px;
     column-width: var(--column);
     -webkit-column-width: var(--column);
 }
