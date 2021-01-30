@@ -24,7 +24,7 @@ for( var l = 0; l < descs.length; l++ ) {
     var desc = descs[l];
     var parent = desc.parentElement;
 
-    console.log(parent.style.height - desc.offsetTop);
+    console.log(parent.style.height);
     desc.style.height = parent.style.height - desc.offsetTop;
 
 }
