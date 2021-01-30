@@ -36,7 +36,7 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
             }
 
-        } else {
+        } elseif( !empty(wp_get_attachment_caption( get_post_thumbnail_id( $post->ID ) )) ) {
 
             $o .= "<div class='post_author'>". wp_get_attachment_caption( get_post_thumbnail_id( $post->ID ) ) ."</div>";
 
