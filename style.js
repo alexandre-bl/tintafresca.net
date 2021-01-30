@@ -18,3 +18,12 @@ for( var i = posts; i < posts.length; i++ ) {
     }
 
 }
+
+for( var l; l < descs.length; l++ ) {
+
+    var desc = descs[l];
+    var parent = desc.parent;
+
+    desc.style.height = parent.style.height - desc.offsetTop;
+
+}
