@@ -38,7 +38,7 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
         } else {
 
-            $o .= "<div class='post_desc'>". wp_get_attachment_caption( get_post_thumbnail_id( $post->ID ) ) ."</div>";
+            $o .= "<div class='post_author'>". wp_get_attachment_caption( get_post_thumbnail_id( $post->ID ) ) ."</div>";
 
         }
 

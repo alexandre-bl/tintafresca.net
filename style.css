@@ -323,7 +323,7 @@ b {
     border: 0;
 }
 
-#opinion .post_desc {
+.post_caption {
     text-align: center;
     margin: var(--std_margin) !important;
 }
