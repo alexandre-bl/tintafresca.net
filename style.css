@@ -152,9 +152,7 @@ html {
     top: calc(var(--main_h) / 2 + var(--std_margin)/2);
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-    height: calc(
-        var(--main_h) / 2 - var(--std_margin)/2 - var(--std_padding) * 2
-    );
+    height: calc(var(--main_h) / 2 - var(--std_margin)/2 - var(--std_padding) * 2);
 }
 
 #sec_posts {
