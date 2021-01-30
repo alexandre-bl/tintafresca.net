@@ -144,16 +144,16 @@ html {
     top: 0;
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
-    height: calc(var(--main_h) / 2 - var(--std_padding) * 2);
+    height: calc(var(--main_h) / 2 - var(--std_margin)/2 - var(--std_padding) * 2);
 }
 
 #trd_post {
     position: absolute;
-    top: calc(var(--main_h) / 2 + var(--std_margin));
+    top: calc(var(--main_h) / 2 + var(--std_margin)/2);
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(
-        var(--main_h) / 2 - var(--std_margin) - var(--std_padding) * 2
+        var(--main_h) / 2 - var(--std_margin)/2 - var(--std_padding) * 2
     );
 }
 
