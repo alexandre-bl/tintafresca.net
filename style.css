@@ -210,10 +210,10 @@ html {
 }
 
 .post .post_desc {
-    --column: 100%;
-    column-width: var(--column);
-    -webkit-column-width: var(--column);
-    -moz-column-width: var(--column);
+    --column: 1;
+    column-count: var(--column);
+    -webkit-column-count: var(--column);
+    -moz-column-count: var(--column);
 }
 
 .post img {
