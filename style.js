@@ -66,6 +66,8 @@ for( var l = 0; l < to_resize.length; l++ ) {
 
         }
 
+        console.log(pos_w);
+
     } else {
 
         to_resize[l].style.height = pos_h + "px"; 
