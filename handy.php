@@ -42,7 +42,7 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
                 
             }
 
-            $o .= "</div";
+            $o .= "</div>";
 
         } elseif( !empty(wp_get_attachment_caption( get_post_thumbnail_id( $post->ID ) )) ) {
 
