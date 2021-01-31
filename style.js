@@ -57,6 +57,10 @@ for( var l = 0; l < descs.length; l++ ) {
 
             descs[l].style.width = p_width*0.5 + "px"; 
 
+        } else {
+
+            descs[l].style.height = pos_height + "px"; 
+
         }
 
     } else {
