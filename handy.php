@@ -28,17 +28,21 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
             if( empty( $desc ) or $singular ) {
 
-                $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content ) ."</div>";
+                $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content );
 
             } else {
 
                 $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $desc );
 
-                $o .= "<img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
-
-                $o .= "</div>";
-
             }
+
+            if( !$singular ) {
+
+                $o .= "<img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
+                
+            }
+
+            $o .= "</div";
 
         } elseif( !empty(wp_get_attachment_caption( get_post_thumbnail_id( $post->ID ) )) ) {
 
