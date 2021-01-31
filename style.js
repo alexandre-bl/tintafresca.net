@@ -36,8 +36,8 @@ for( var l = 0; l < to_resize.length; l++ ) {
 
     }
 
-    var parent_h = window.getComputedStyle(to_resize[l].parentElement, null).getPropertyValue("parent_h");
-    
+    var parent_h = window.getComputedStyle(to_resize[l].parentElement, null).getPropertyValue("height");
+
     y = y.toString().replace("px","");
     parent_h = parent_h.toString().replace("px","");
 
