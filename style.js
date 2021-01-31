@@ -1,5 +1,5 @@
 var posts = document.getElementsByClassName("post");
-var descs = [];
+var to_resize = [];
 
 for( var i = 0; i < posts.length; i++ ) {
 
@@ -14,7 +14,7 @@ for( var i = 0; i < posts.length; i++ ) {
             if( child.classList.contains("post_desc") ||
                 child.classList.contains("post_img")  ){
 
-                descs.push( child );
+                to_resize.push( child );
 
             }
 
@@ -24,50 +24,51 @@ for( var i = 0; i < posts.length; i++ ) {
 
 }
 
-for( var l = 0; l < descs.length; l++ ) {
+for( var l = 0; l < to_resize.length; l++ ) {
 
-    if( descs[l].parentElement.id ) {
+    if( to_resize[l].parentElement.id ) {
 
-        var y = descs[l].offsetTop;
+        var y = to_resize[l].offsetTop;
 
     } else {
 
-        var y = descs[l].offsetTop - descs[l].parentElement.offsetTop;
+        var y = to_resize[l].offsetTop - to_resize[l].parentElement.offsetTop;
 
     }
 
-    var height = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height");
+    var parent_h = window.getComputedStyle(to_resize[l].parentElement, null).getPropertyValue("parent_h");
+    
     y = y.toString().replace("px","");
-    height = height.toString().replace("px","");
+    parent_h = parent_h.toString().replace("px","");
 
-    var pos_height = height - y + 8;
+    var pos_h = parent_h - y + 8;
 
-    if( descs[l].tagName == "IMG" ) {
+    if( to_resize[l].tagName == "IMG" ) {
 
-        var width = window.getComputedStyle(descs[l], null).getPropertyValue("width");
-        width = width.toString().replace("px","");
-        var h = window.getComputedStyle(descs[l], null).getPropertyValue("height");
+        var w = window.getComputedStyle(to_resize[l], null).getPropertyValue("width");
+        w = w.toString().replace("px","");
+
+        var h = window.getComputedStyle(to_resize[l], null).getPropertyValue("height");
         h = h.toString().replace("px","");
-        var p_width = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("width");
-        p_width = p_width.toString().replace("px","");
 
-        var pos_width = width * ( pos_height / h );
+        var parent_w = window.getComputedStyle(to_resize[l].parentElement, null).getPropertyValue("width");
+        parent_w = parent_w.toString().replace("px","");
 
-        console.log(pos_width); 
+        var pos_w = w * ( pos_h / h );
 
-        if( pos_width > p_width*0.5 ) {
+        if( pos_w > parent_w*0.5 ) {
 
-            descs[l].style.width = p_width*0.5 + "px"; 
+            to_resize[l].style.width = parent_w*0.5 + "px"; 
 
         } else {
 
-            descs[l].style.height = pos_height + "px"; 
+            to_resize[l].style.height = pos_h + "px"; 
 
         }
 
     } else {
 
-        descs[l].style.height = pos_height + "px"; 
+        to_resize[l].style.height = pos_h + "px"; 
 
     }
 }
