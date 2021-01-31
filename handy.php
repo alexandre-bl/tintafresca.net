@@ -20,20 +20,21 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 
             $desc = get_post_meta( $post->ID, "Description", TRUE );
 
-            if( empty( $desc ) or $singular ) {
-
-                $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $post->post_content );
-
-            } else {
-
-                $o .= "<div class='post_desc'>". apply_filters( 'the_content',  $desc );
-
-            }
 
             if( !$singular ) {
 
-                $o .= "<img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
+                $o .= "<div class='post_desc'><img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
                 
+            }
+
+            if( empty( $desc ) or $singular ) {
+
+                $o .= apply_filters( 'the_content',  $post->post_content );
+
+            } else {
+
+                $o .= apply_filters( 'the_content',  $desc );
+
             }
 
             $o .= "</div>";
