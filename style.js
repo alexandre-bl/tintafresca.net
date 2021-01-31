@@ -53,6 +53,8 @@ for( var l = 0; l < descs.length; l++ ) {
 
         var pos_width = width * ( pos_height / h );
 
+        console.log(pos_width); 
+
         if( pos_width > p_width*0.5 ) {
 
             descs[l].style.width = p_width*0.5 + "px"; 
