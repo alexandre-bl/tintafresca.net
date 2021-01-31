@@ -23,6 +23,6 @@ if( !empty( $query[0] ) ) { $add["img"]  = str_replace( "http://tintafresca.net"
 <div id="header">
 
     <a href="<?php echo get_site_url(); ?>"><img id="logo" src="<?php echo $logo; ?>"></a>
-    <a class="add" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
+    <a class="add" id="header_add" href="<?php echo $add["url"]; ?>"> <img src="<?php echo $add["img"]; ?>"> </a>
 
 </div>

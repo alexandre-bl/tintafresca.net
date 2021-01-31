@@ -26,8 +26,6 @@ for( var i = 0; i < posts.length; i++ ) {
 
 for( var l = 0; l < descs.length; l++ ) {
 
-    console.log( descs[l].parentElement.id + " : " + descs[l].offsetTop + ", " +  descs[l].parentElement.offsetTop );
-
     if( descs[l].parentElement.id ) {
 
         var y = descs[l].offsetTop;

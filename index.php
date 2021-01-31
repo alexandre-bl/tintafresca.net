@@ -30,16 +30,6 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css"; ?>">
         <meta charset="utf-8">
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNCE36250T"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-QNCE36250T');
-        </script>
-
         <!-- Makes it so some CSS features I need that aren't on IE work on IE -->
         <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
 
