@@ -28,7 +28,16 @@ for( var l = 0; l < descs.length; l++ ) {
 
     console.log( descs[l].parentElement.id + " : " + descs[l].offsetTop + ", " +  descs[l].parentElement.offsetTop );
 
-    var y = descs[l].offsetTop ;//- descs[l].parentElement.offsetTop;
+    if( descs[l].parentElement.id ) {
+
+        var y = descs[l].offsetTop;
+
+    } else {
+
+        var y = descs[l].offsetTop - descs[l].parentElement.offsetTop;
+
+    }
+
     var height = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height");
     y = y.toString().replace("px","");
     height = height.toString().replace("px","");
