@@ -42,7 +42,7 @@ for( var l = 0; l < descs.length; l++ ) {
 
     var pos_height = height - y + 8;
 
-    if( descs[l].tagName == "img" ) {
+    if( descs[l].tagName == "IMG" ) {
 
         var width = window.getComputedStyle(descs[l], null).getPropertyValue("width");
         width = width.toString().replace("px","");
