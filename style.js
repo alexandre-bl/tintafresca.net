@@ -26,7 +26,7 @@ for( var i = 0; i < posts.length; i++ ) {
 
 for( var l = 0; l < descs.length; l++ ) {
 
-    console.log( descs[l].parentElement.id + " : " + descs[l].offsetTop );
+    console.log( descs[l].parentElement.id + " : " + descs[l].offsetTop + ", " +  descs[l].parentElement.offsetTop );
 
     var y = descs[l].offsetTop - descs[l].parentElement.offsetTop;
     var height = window.getComputedStyle(descs[l].parentElement, null).getPropertyValue("height");
