@@ -15,12 +15,6 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
         }
 
         $o .= "<h1 class='post_title'><a href='". get_post_permalink( $post->ID ) ."'>$post->post_title</a></h1>";
-        
-        if( !$singular ) {
-
-        	$o .= "<img class='post_img' src='" . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0] . "'>";
-			
-		}
 
         if( !$opinion ) {
 
