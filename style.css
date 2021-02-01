@@ -220,7 +220,7 @@ html {
     display: none;
 }
 
-#center.not_singular .post_desc img:not(.post_img) {
+#center.not_singular .post_desc img {
     width: 0 !important;
     height: 0 !important;
 }
