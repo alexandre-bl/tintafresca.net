@@ -47,10 +47,10 @@ function sizing() {
 
         if( to_resize[l].tagName == "IMG" ) {
 
-            var w = window.getComputedStyle(to_resize[l], null).getPropertyValue("width");
+            var w = window.getComputedStyle(to_resize[l]).getPropertyValue("width");
             w = w.toString().replace("px","");
 
-            var h = window.getComputedStyle(to_resize[l], null).getPropertyValue("height");
+            var h = window.getComputedStyle(to_resize[l]).getPropertyValue("height");
             h = h.toString().replace("px","");
 
             var parent_w = window.getComputedStyle(to_resize[l].parentElement, null).getPropertyValue("width");
@@ -58,7 +58,7 @@ function sizing() {
 
             var pos_w = w * ( pos_h / h );
 
-            console.log(w + ", " + h);
+            console.log(w);
 
             if( pos_w > parent_w*0.5 ) {
 
@@ -75,6 +75,7 @@ function sizing() {
             to_resize[l].style.height = pos_h + "px"; 
 
         }
+
     }
 
 }
