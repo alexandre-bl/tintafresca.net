@@ -47,13 +47,13 @@ function sizing() {
 
         if( to_resize[l].tagName == "IMG" ) {
 
-            var w = window.getComputedStyle(to_resize[l]).getPropertyValue("width");
+            var w = window.getComputedStyle(to_resize[l]).width;
             w = w.toString().replace("px","");
 
-            var h = window.getComputedStyle(to_resize[l]).getPropertyValue("height");
+            var h = window.getComputedStyle(to_resize[l]).height;
             h = h.toString().replace("px","");
 
-            var parent_w = window.getComputedStyle(to_resize[l].parentElement, null).getPropertyValue("width");
+            var parent_w = window.getComputedStyle(to_resize[l].parentElement).width;
             parent_w = parent_w.toString().replace("px","");
 
             var pos_w = w * ( pos_h / h );
