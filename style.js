@@ -66,7 +66,7 @@ for( var l = 0; l < to_resize.length; l++ ) {
 
         }
 
-        console.log(parent_h);
+        console.log(w + ", " + h);
 
     } else {
 
