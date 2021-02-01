@@ -66,7 +66,7 @@ for( var l = 0; l < to_resize.length; l++ ) {
 
         }
 
-        console.log(pos_w);
+        console.log(h);
 
     } else {
 
