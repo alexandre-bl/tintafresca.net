@@ -52,6 +52,7 @@ if( !empty( $query[1] ) ) { $add["img"] = $query[1]->img;
 
     <ul>
         <li><a href="<?php echo get_site_url(); ?>">Página Inicial</a></li>
+        <li><a href="<?php echo get_site_url()."index.php/feed"; ?>">Feed</a></li>
         <?php echo $pages_html; ?>
     </ul>
 
