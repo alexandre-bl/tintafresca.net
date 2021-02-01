@@ -56,6 +56,8 @@ for( var l = 0; l < to_resize.length; l++ ) {
 
         var pos_w = w * ( pos_h / h );
 
+        console.log(w + ", " + h);
+
         if( pos_w > parent_w*0.5 ) {
 
             to_resize[l].style.width = parent_w*0.5 + "px"; 
@@ -65,8 +67,6 @@ for( var l = 0; l < to_resize.length; l++ ) {
             to_resize[l].style.height = pos_h + "px"; 
 
         }
-
-        console.log(w + ", " + h);
 
     } else {
 
