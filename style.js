@@ -58,7 +58,7 @@ function sizing() {
 
             var pos_w = w * ( pos_h / h );
 
-            console.log( to_resize[l].offsetWidth );
+            console.log( to_resize[l].clientWidth );
 
             if( pos_w > parent_w*0.5 ) {
 
