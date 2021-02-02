@@ -127,6 +127,12 @@ html {
 
 }
 
+#respond {
+
+    background-color: var(--background_2);
+
+}
+
 #center {
     position: absolute;
     top: calc(
