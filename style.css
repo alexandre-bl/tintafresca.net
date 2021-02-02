@@ -123,8 +123,8 @@ html {
 
 }
 
-.comment .comment-form-email,
-.comment .comment-form-url {
+.comment-form-email,
+.comment-form-url {
 
     display: none;
 
