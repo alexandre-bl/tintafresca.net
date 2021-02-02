@@ -127,7 +127,8 @@ html {
 .comment-form-url,
 .comment-form-cookies-consent,
 .comment-form-comment label,
-#email-notes {
+#email-notes,
+#reply-title {
 
     display: none;
 
