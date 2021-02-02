@@ -23,7 +23,7 @@
         echo "</div>";
 
     } else {
-        echo '<p>No comments found.</p>';
+        echo '<p>Ainda não há comentários nenhuns.</p>';
     }
 
 ?> </div>
