@@ -22,7 +22,7 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 			
 		} else {
 
-            $o .= "<h3 class='post_date'><a href='". get_post_permalink( $post->ID ) ."'>$post->post_date</a></h3>";
+            $o .= "<h3 class='post_date'>$post->post_date</h3>";
 
         }
 
