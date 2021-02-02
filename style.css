@@ -111,7 +111,7 @@ html {
     top: calc( 100% + var(--std_margin) );
     left: 0;
     width: 100%;
-    border-bottom: 400px solid #fff;
+    margin-bottom: 400px solid #fff;
 }
 
 .comment {
