@@ -123,6 +123,13 @@ html {
 
 }
 
+.comment .comment-form-email,
+.comment .comment-form-url {
+
+    display: none;
+
+}
+
 .comment .author {
 
     margin-bottom: var(--std_margin);
