@@ -251,6 +251,7 @@ html {
         var(--main_h) / 2 - var(--std_margin) / 2 - var(--std_padding) * 2
     );
     width: 100%;
+    margin: 0;
     margin-bottom: var(--std_margin);
 }
 
