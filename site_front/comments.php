@@ -17,11 +17,11 @@
         foreach ( $comments as $comment ) {
             echo '<p>' . $comment->comment_content . '</p>';
         }
-        
+
         echo "</div>";
 
     } else {
-        echo 'No comments found.';
+        echo '<p>No comments found.</p>';
     }
 
 ?> </div>
