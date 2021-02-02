@@ -133,8 +133,7 @@ html {
 .comment-form-url,
 .comment-form-cookies-consent,
 .comment-form-comment label,
-#email-notes,
-#reply-title {
+#email-notes {
 
     display: none;
 
