@@ -186,7 +186,7 @@ html {
 #center.singular {
     background-color: var(--background_2);
     padding: var(--std_padding);
-    width: calc(100% - var(--border_w) * 2 - var(--std_margin) * 5);
+    width: calc(100% - var(--border_w) * 2 - var(--std_margin) * 3);
     height: auto !important;
 }
 
