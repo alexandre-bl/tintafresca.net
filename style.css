@@ -110,7 +110,7 @@ html {
     position: absolute;
     top: calc( 100% + var(--std_margin) );
     left: calc(var(--border_w) + var(--std_margin));
-    width: calc(100% - var(--border_w) * 2 - var(--std_margin));
+    width: 100%;
 }
 
 #center {
