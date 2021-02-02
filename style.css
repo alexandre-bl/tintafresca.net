@@ -117,6 +117,7 @@ html {
 
     background-color: var(--background_2);
     padding: var(--std_padding);
+    margin-bottom: var(--std_margin);
 
 }
 
