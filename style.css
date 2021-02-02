@@ -134,6 +134,14 @@ html {
 
 }
 
+#respond textarea {
+
+    position: absolute;
+    left: 10%;
+    top: auto;
+
+}
+
 #center {
     position: absolute;
     top: calc(
