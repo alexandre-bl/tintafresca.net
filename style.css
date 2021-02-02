@@ -137,6 +137,12 @@ html {
 
 }
 
+.comment .author {
+
+    float: left;
+
+}
+
 #respond {
 
     background-color: var(--background_2);
