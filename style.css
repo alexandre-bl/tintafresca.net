@@ -255,7 +255,7 @@ b {
 
 .post_date {
     font-size: 8px;
-    margin-top: var(--std_margin);
+    margin-top: clac( -1 * var(--std_margin) );
 }
 
 .post_title {
