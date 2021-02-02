@@ -2,7 +2,8 @@
 
     //Get only the approved comments
     $args = array(
-        'status' => 'approve'
+        'status' => 'approve',
+        'avatar_size' => 74
     );
     
     // The comment Query
@@ -16,13 +17,11 @@
     // Comment Loop
     if ( $comments ) {
 
-        echo "<div class='comment'>";
-
-        foreach ( $comments as $comment ) {
-            echo '<p>' . $comment->comment_content . '</p>';
-        }
-
-        echo "</div>";
+        wp_list_comments( array(
+            'style'       => 'ol',
+            'short_ping'  => true,
+            'avatar_size' => 74,
+        ) );
 
     } else {
         echo '<p>Ainda não há comentários nenhuns.</p>';
