@@ -126,6 +126,7 @@ html {
 .comment img {
 
     float: left;
+    padding: 0 var(--std_padding) 0 var(--std_padding);
 
 }
 
