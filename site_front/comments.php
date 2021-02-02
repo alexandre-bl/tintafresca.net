@@ -17,11 +17,14 @@
     // Comment Loop
     if ( $comments ) {
 
-        wp_list_comments( array(
-            'style'       => 'ol',
-            'short_ping'  => true,
-            'avatar_size' => 74,
-        ) );
+        echo "<div class='comment'>";
+
+        foreach ( $comments as $comment ) {
+            echo get_avatar( $comment, 72 );
+            echo '<p>' . $comment->comment_content . '</p>';
+        }
+
+        echo "</div>";
 
     } else {
         echo '<p>Ainda não há comentários nenhuns.</p>';
