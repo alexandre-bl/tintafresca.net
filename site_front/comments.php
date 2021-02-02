@@ -11,9 +11,15 @@
     
     // Comment Loop
     if ( $comments ) {
+
+        echo "<div class='comment'>";
+
         foreach ( $comments as $comment ) {
             echo '<p>' . $comment->comment_content . '</p>';
         }
+        
+        echo "</div>";
+
     } else {
         echo 'No comments found.';
     }

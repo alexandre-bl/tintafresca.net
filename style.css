@@ -113,6 +113,13 @@ html {
     width: 100%;
 }
 
+.comment {
+
+    background-color: var(--background_2);
+    padding: var(--std_padding);
+
+}
+
 #center {
     position: absolute;
     top: calc(
