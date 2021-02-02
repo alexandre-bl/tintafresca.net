@@ -22,7 +22,7 @@ function get_post_content( $post, $singular=FALSE, $opinion=FALSE ) {
 			
 		} else {
 
-            $o .= "<h4 class='post_date'>$post->post_date</h4>";
+            $o .= "<h3 class='post_date'>$post->post_date</h3>";
 
         }
 
