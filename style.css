@@ -132,7 +132,7 @@ html {
 .comment img {
 
     float: left;
-    padding: 0 var(--std_padding) var(--std_margin) 0 ;
+    padding: 0 var(--std_margin) var(--std_margin) 0 ;
 
 }
 
