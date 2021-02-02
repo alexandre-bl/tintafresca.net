@@ -120,6 +120,13 @@ html {
 
 }
 
+.comment p {
+
+    margin: 0;
+    padding: 0;
+
+}
+
 #center {
     position: absolute;
     top: calc(
