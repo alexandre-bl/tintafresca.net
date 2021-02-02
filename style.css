@@ -124,7 +124,8 @@ html {
 }
 
 .comment-form-email,
-.comment-form-url {
+.comment-form-url,
+.comment-form-cookies-consent {
 
     display: none;
 
