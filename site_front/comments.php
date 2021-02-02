@@ -1,4 +1,4 @@
-<?
+<?php
 
 //Get only the approved comments
 $args = array(
