@@ -123,12 +123,6 @@ html {
 
 }
 
-.comment label {
-
-    width: 50px;
-
-}
-
 .comment-form-email,
 .comment-form-url,
 .comment-form-cookies-consent {
@@ -168,6 +162,7 @@ html {
 #respond label {
 
     padding-right: var(--std_padding);
+    width: 90px;
 
 }
 
