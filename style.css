@@ -109,7 +109,7 @@ html {
 #comments {
     position: absolute;
     top: calc( 100% + var(--std_margin) );
-    left: calc(var(--border_w) + var(--std_margin));
+    left: 0;
     width: 100%;
 }
 
