@@ -123,6 +123,12 @@ html {
 
 }
 
+.comment .author {
+
+    margin-bottom: var(--std_margin);
+
+}
+
 .comment img {
 
     float: left;
