@@ -9,7 +9,7 @@
     $comments_query = new WP_Comment_Query;
     $comments = $comments_query->query( $args );
     
-    echo "<h1>Comentários</h1>";
+    echo "<h1>Comentários:</h1>";
 
     // Comment Loop
     if ( $comments ) {
