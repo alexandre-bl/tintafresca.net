@@ -125,7 +125,8 @@ html {
 
 .comment-form-email,
 .comment-form-url,
-.comment-form-cookies-consent {
+.comment-form-cookies-consent,
+.comment-form-comment label {
 
     display: none;
 
@@ -161,7 +162,7 @@ html {
 
 #respond label {
 
-    padding-right: var(--std_padding);
+    padding-right: var(--std_padding);  
 
 }
 
