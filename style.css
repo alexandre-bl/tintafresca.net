@@ -125,7 +125,7 @@ html {
 
 #comment {
 
-    width: calc(100% - --std_padding);
+    width: calc(100% - var(--std_padding));
 
 }
 
