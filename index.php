@@ -44,8 +44,13 @@
             require_once "site_front/left_bar.php";
             require_once "site_front/right_bar.php";
             require_once "site_front/center.php";
-            require_once "site_front/comments.php";
+
+            if( is_singular() ) {
+
+                require_once "site_front/comments.php";
             
+            }
+
         ?>
 
         <script src="<?php echo get_template_directory_uri()."/style.js"; ?>"></script>
