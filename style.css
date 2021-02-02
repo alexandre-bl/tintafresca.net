@@ -137,14 +137,6 @@ html {
 
 }
 
-.comment .author {
-
-    position: absolute;
-    left: 0;
-    top: 72px;
-
-}
-
 #respond {
 
     background-color: var(--background_2);
