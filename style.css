@@ -111,6 +111,7 @@ html {
     top: calc( 100% + var(--std_margin) );
     left: 0;
     width: 100%;
+    border-bottom: 400px solid #fff;
 }
 
 .comment {
@@ -157,7 +158,6 @@ html {
     padding: var(--std_padding);
     width: calc(100% - var(--border_w) * 2 - var(--std_margin) * 5);
     height: auto !important;
-    border-bottom: 400px solid var(--background_2);
 }
 
 #center.singular .post_title {
