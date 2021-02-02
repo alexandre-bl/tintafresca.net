@@ -139,7 +139,9 @@ html {
 
 .comment .author {
 
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 72;
 
 }
 
