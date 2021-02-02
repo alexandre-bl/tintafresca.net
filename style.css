@@ -134,6 +134,12 @@ html {
 
 }
 
+#respond label {
+
+    padding-right: var(--std_padding);
+
+}
+
 #center {
     position: absolute;
     top: calc(
