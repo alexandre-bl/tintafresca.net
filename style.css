@@ -122,6 +122,12 @@ html {
 
 }
 
+.comment img {
+
+    float: left;
+
+}
+
 .comment p {
 
     margin: 0;
