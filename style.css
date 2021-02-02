@@ -123,6 +123,12 @@ html {
 
 }
 
+.comment label {
+
+    width: 50px;
+
+}
+
 .comment-form-email,
 .comment-form-url,
 .comment-form-cookies-consent {
