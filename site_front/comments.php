@@ -17,15 +17,13 @@
     // Comment Loop
     if ( $comments ) {
 
-        echo "<div class='comment'>";
-
         foreach ( $comments as $comment ) {
+            echo "<div class='comment'>";
             echo '<p class="author"><b>' . get_comment_author( $comment ) . '</b></p>'; 
             echo get_avatar( $comment, 72 );
             echo '<p>' . $comment->comment_content . '</p>';
+            echo "</div>";
         }
-
-        echo "</div>";
 
     } else {
         echo '<p>Ainda não há comentários nenhuns.</p>';
