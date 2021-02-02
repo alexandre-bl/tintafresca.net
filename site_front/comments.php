@@ -20,8 +20,8 @@
         echo "<div class='comment'>";
 
         foreach ( $comments as $comment ) {
-            echo get_avatar( $comment, 72 );
             echo '<p class="author">' . get_comment_author( $comment ) . '</p>'; 
+            echo get_avatar( $comment, 72 );
             echo '<p>' . $comment->comment_content . '</p>';
         }
 
