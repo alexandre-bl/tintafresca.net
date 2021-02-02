@@ -253,6 +253,11 @@ b {
     white-space: unset;
 }
 
+.post_date {
+    font-size: 8px;
+    margin-top: var(--std_margin);
+}
+
 .post_title {
     font-size: 16px;
     margin-top: 0;
