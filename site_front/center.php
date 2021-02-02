@@ -123,6 +123,13 @@
 				</div>
 			</div>
 
-		<?php } ?>
+		<?php }
 
+		if( is_singular() ) {
+
+			require_once "site_front/comments.php";
+
+		}
+
+		?>
 </div>
