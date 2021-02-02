@@ -11,6 +11,8 @@
     
     echo "<h1>Comentários:</h1>";
 
+    comment_form();
+
     // Comment Loop
     if ( $comments ) {
 
