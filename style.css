@@ -255,7 +255,13 @@ b {
 
 .post_date {
     font-size: 8px;
-    margin-top: clac( -1 * var(--std_margin) );
+    margin-top: 0;
+}
+
+#center.not_singular .post_title {
+
+    margin-bottom: var(--std_margin);
+
 }
 
 .post_title {
