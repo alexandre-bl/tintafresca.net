@@ -202,7 +202,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
+    width: 100%;
     height: calc(var(--main_h) - var(--std_padding) * 2);
     font-size: 16px;
 }
