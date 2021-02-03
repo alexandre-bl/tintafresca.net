@@ -40,14 +40,21 @@
 				
 						$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
 				
-						if( ( $i ) % 2 == 0 ) {
-				
+						if( wp_is_mobile() ) {
 							$posts_markup["left"] .= $thumbnail;
-				
+	
 						} else {
-				
-							$posts_markup["right"] .= $thumbnail;
-				
+	
+							if( ( $i ) % 2 == 0 ) {
+					
+								$posts_markup["left"] .= $thumbnail;
+					
+							} else {
+					
+								$posts_markup["right"] .= $thumbnail;
+					
+							}
+	
 						}
 				
 					}
@@ -101,8 +108,6 @@
 
 					} else {
 
-						$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
-				
 						if( ( $i ) % 2 == 0 ) {
 				
 							$posts_markup["left"] .= $thumbnail;
