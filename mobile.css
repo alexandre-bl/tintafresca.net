@@ -213,7 +213,7 @@ html {
 
 #nd_post {
     position: absolute;
-    top: 0;
+    top: var(--main_h);
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(
@@ -223,7 +223,7 @@ html {
 
 #trd_post {
     position: absolute;
-    top: calc(var(--main_h) / 2 + var(--std_margin) / 2);
+    top: calc(var(--main_h) / 2 + var(--std_margin) / 2 + var(--main_h));
     right: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(
@@ -233,7 +233,7 @@ html {
 
 #sec_posts {
     position: absolute;
-    top: var(--main_h);
+    top: var(--main_h*2);
     left: 0;
     margin-top: var(--std_margin);
     width: 100%;
