@@ -139,7 +139,7 @@
 
 		<?php }
 
-		if( is_singular() ) {
+		if( is_single() ) {
 
 			require_once "comments.php";
 
