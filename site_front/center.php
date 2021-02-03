@@ -96,11 +96,10 @@
 				
 					$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
 			
-					echo "Mobile: ".wp_is_mobile();
 					if( wp_is_mobile() ) {
 						$posts_markup["left"] .= $thumbnail;
 
-					} else {
+					} /* else {
 
 						if( ( $i ) % 2 == 0 ) {
 				
@@ -112,7 +111,7 @@
 				
 						}
 
-					}
+					} */
 				
 				}
 				
