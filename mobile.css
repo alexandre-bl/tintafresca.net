@@ -202,7 +202,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc( 100%  - var(--std_padding)*2); 
     height: calc(var(--main_h) - var(--std_padding) * 2);
     font-size: 16px;
 }
@@ -215,7 +215,7 @@ html {
     position: absolute;
     top: calc( var(--main_h) + var(--std_margin) );
     left: 0;
-    width: 100%;
+    width: calc( 100%  - var(--std_padding)*2); 
     height: calc(
         var(--main_h) / 2 - var(--std_margin) / 2 - var(--std_padding) * 2
     );
@@ -225,7 +225,7 @@ html {
     position: absolute;
     top: calc( var(--main_h)*1.5 + var(--std_margin) );
     right: 0;
-    width: 100%;
+    width: calc( 100%  - var(--std_padding)*2); 
     height: calc(
         var(--main_h) / 2 - var(--std_margin) / 2 - var(--std_padding) * 2
     );
