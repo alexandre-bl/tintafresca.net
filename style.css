@@ -252,7 +252,7 @@ html {
     );
     width: 100%;
     margin: 0;
-    margin-bottom: calc( var(--std_margin) - 2px );
+    margin-bottom: calc( var(--std_margin) - 4px );
 }
 
 #right_posts {
