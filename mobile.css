@@ -204,11 +204,11 @@ html {
     left: 0;
     width: calc( 100%  - var(--std_padding)*2); 
     height: calc(var(--main_h) - var(--std_padding) * 2);
-    font-size: 16px;
+    font-size: 24px;
 }
 
 #st_post h1 {
-    font-size: 20px;
+    font-size: 32px;
 }
 
 #nd_post {
