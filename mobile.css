@@ -213,7 +213,7 @@ html {
 
 #nd_post {
     position: absolute;
-    top: var(--main_h);
+    top: calc( var(--main_h) + var(--std_margin) );
     left: 0;
     width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
     height: calc(
