@@ -108,6 +108,7 @@ html {
     text-align: center;
     font-size: 24px;
     border-bottom: 1px solid var(--border_c);
+    border-top: 1px solid var(--border_c);
 }
 
 #comments {
