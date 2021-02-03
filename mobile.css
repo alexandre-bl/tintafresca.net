@@ -92,6 +92,7 @@ html {
 }
 
 #left_bar ul {
+    list-style-type: none;
     width: 80%;
     position: absolute;
     top: 0;
