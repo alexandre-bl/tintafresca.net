@@ -27,7 +27,19 @@
         <meta name="description" content="<?php echo $desc; ?>">
         <link rel="icon" href="<?php echo get_site_icon_url(); ?>">
 
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.css"; ?>">
+        <?php
+            echo "<link rel='stylesheet' href='";
+            echo get_template_directory_uri();
+
+            if( wp_is_mobile() ) { 
+                echo "/mobile.css";
+            } else {
+                echo "/style.css";
+            }
+            
+            echo "'>";
+        ?>
+
         <meta charset="utf-8">
 
         <!-- Makes it so some CSS features I need that aren't on IE work on IE -->
