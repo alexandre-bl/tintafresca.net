@@ -98,7 +98,7 @@
 			
 					if( wp_is_mobile() ) {
 
-						echo "mobile";
+						echo wp_is_mobile();
 						$posts_markup["left"] .= $thumbnail;
 
 					} else {
