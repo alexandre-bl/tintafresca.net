@@ -272,7 +272,7 @@ html {
 .post {
     background-color: var(--background_2);
     padding: var(--std_padding);
-    font-size: 16px;
+    font-size: 20px;
     display: inline-block;
     overflow: hidden;
 }
@@ -322,7 +322,7 @@ html {
 }
 
 .post_date {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 0;
 }
 
@@ -333,12 +333,12 @@ html {
 }
 
 .post_title {
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 0;
 }
 
 .post_pretitle {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     padding-bottom: var(--std_padding);
 }
