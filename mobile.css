@@ -250,7 +250,7 @@ html {
     height: calc(
         var(--main_h) / 2 - var(--std_padding) * 2
     );
-    width: 100%;
+    width: calc( 100%  - var(--std_padding)*2); 
     margin: 0;
     margin-bottom: calc( var(--std_margin) - 4px );
 }
@@ -259,7 +259,7 @@ html {
     position: absolute;
     top: 0;
     left: calc(50% + var(--std_margin) / 2);
-    width: calc(50% - var(--std_margin) / 2 - var(--std_padding) * 2);
+    width: 0;
 }
 
 #left_posts {

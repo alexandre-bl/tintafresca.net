@@ -96,7 +96,7 @@
 				
 					$thumbnail = "<div class='post'>". get_post_content($posts[$i]) ."</div>";
 			
-					if( ( $i ) % 2 == 0 ) {
+					if( ( $i ) % 2 == 0 or wp_is_mobile() ) {
 			
 						$posts_markup["left"] .= $thumbnail;
 			
