@@ -396,6 +396,10 @@ html {
     font-size: 14px;
 }
 
+#opinion .post_desc {
+    font-size: 14px;
+}
+
 .post_author {
     text-align: center;
     margin: var(--std_margin) !important;
