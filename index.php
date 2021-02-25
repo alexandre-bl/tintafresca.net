@@ -12,7 +12,7 @@
 
     if( is_singular() ) {
 
-        $title .= " - " . get_the_title();
+        $title = get_the_title();
 
         if( !empty( $meta_desc ) ) {
 
