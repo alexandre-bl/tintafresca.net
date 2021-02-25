@@ -31,7 +31,7 @@
 
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $desc; ?>">
-        <meta name="og:image" content="<?php echo $meta_img; ?>"
+        <meta name="og:image" content="<?php echo $meta_img; ?>">
         <link rel="icon" href="<?php echo get_site_icon_url(); ?>">
 
         <?php
